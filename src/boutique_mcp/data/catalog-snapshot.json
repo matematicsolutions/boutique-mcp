@@ -1,0 +1,4376 @@
+{
+ "$schema": "https://matematicsolutions.com/catalog.schema.json",
+ "schema_version": "1.0",
+ "generated_at": "2026-07-13",
+ "source": "https://matematicsolutions.com/boutique",
+ "counts": {
+  "konektor": 43,
+  "skill": 52,
+  "kuratorski": 8,
+  "total": 103
+ },
+ "entries": [
+  {
+   "id": "at-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "RIS / ELI",
+    "en": "RIS / ELI",
+    "pt": "RIS / ELI"
+   },
+   "problem": {
+    "pl": "Austriackie prawo federalne to kolejna krajowa baza i własny format - druga ściana w sprawie transgranicznej.",
+    "en": "Austrian federal law is another national database in its own format - a second wall for cross-border work.",
+    "pt": "A legislação federal austríaca é mais uma base nacional em formato próprio - uma segunda barreira para o trabalho transfronteiriço."
+   },
+   "description": {
+    "pl": "Konektor do oficjalnego RIS (data.bka.gv.at): legislacja federalna (Bundesrecht) z ELI oraz orzecznictwo (Judikatur) z natywnym ECLI, każde z linkiem do źródła. Trzeci konektor linii eu-legal-mcp.",
+    "en": "A connector to the official RIS (data.bka.gv.at): federal legislation (Bundesrecht) with ELI and case law (Judikatur) with native ECLI, each with a source link.",
+    "pt": "Um conector para o RIS oficial (data.bka.gv.at): legislação federal (Bundesrecht) com ELI e jurisprudência (Judikatur) com ECLI nativo, cada uma com link para a fonte."
+   },
+   "category": {
+    "pl": "prawo i orzecznictwo",
+    "en": "law and case law",
+    "pt": "lei e jurisprudência"
+   },
+   "jurisdiction": {
+    "pl": "Austria",
+    "en": "Austria",
+    "pt": "Áustria"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx at-eli-mcp"
+   },
+   "version": "0.2.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/at-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-at-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-at-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-at-eli-mcp"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "au-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Federal Register of Legislation",
+    "en": "Federal Register of Legislation",
+    "pt": "Federal Register of Legislation"
+   },
+   "problem": {
+    "pl": "Australijskie ustawodawstwo federalne nie ma otwartego API wyszukiwania w formacie ELI - bez konektora agent go nie przeszuka.",
+    "en": "Australia's federal statute book has no open search API in ELI format - unsearchable without a connector.",
+    "pt": "O corpo legal federal australiano não tem API de busca aberta em formato ELI - impossível de pesquisar sem um conector."
+   },
+   "description": {
+    "pl": "Konektor do oficjalnego Federal Register of Legislation: wyszukiwanie ustaw i pełny tekst z prawdziwego renderowania po stronie serwera, z identyfikatorem FRLI (np. \"C2004A00042\") i linkiem do źródła. MVP obejmuje ustawy - rozporządzenia i inne instrumenty poza zakresem.",
+    "en": "A connector to the official Federal Register of Legislation: search Acts and full text from genuine server-side rendering, with an FRLI identifier (e.g. \"C2004A00042\") and a source link. MVP covers Acts - regulations and other instrument types are out of scope.",
+    "pt": "Um conector para o Federal Register of Legislation oficial: busca de leis e texto integral obtido por renderização genuína no servidor, com identificador FRLI (por exemplo, \"C2004A00042\") e link para a fonte. O MVP cobre leis - regulamentos e outros tipos de instrumento estão fora do escopo."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Australia",
+    "en": "Australia",
+    "pt": "Austrália"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx au-eli-mcp"
+   },
+   "version": "0.1.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/au-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-au-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-au-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-au-eli-mcp"
+   },
+   "added_at": "2026-07-06",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "be-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Moniteur Belge / Belgisch Staatsblad",
+    "en": "Moniteur Belge / Belgisch Staatsblad",
+    "pt": "Moniteur Belge / Belgisch Staatsblad"
+   },
+   "problem": {
+    "pl": "Belgijski dziennik urzędowy publikuje po francusku, niderlandzku i niemiecku - bez konektora agent nie dotrze do żadnej wersji.",
+    "en": "Belgium's official gazette publishes in French, Dutch and German - without a connector the agent can't reach any of them.",
+    "pt": "O diário oficial belga publica em francês, neerlandês e alemão - sem um conector o agente não alcança nenhum deles."
+   },
+   "description": {
+    "pl": "Konektor do ejustice.just.fgov.be: akty po współrzędnej (typ/rok/miesiąc/dzień/numer NUMAC) lub przegląd rocznika, trójjęzyczny (domyślnie francuski), z linkiem do źródła. Bez wyszukiwania pełnotekstowego - dostęp po współrzędnej.",
+    "en": "A connector to ejustice.just.fgov.be: acts by coordinate (type/year/month/day/NUMAC number) or a year browse, trilingual (French by default), with a source link. No full-text search - lookup is by coordinate only.",
+    "pt": "Um conector para o ejustice.just.fgov.be: atos por coordenada (tipo/ano/mês/dia/número NUMAC) ou navegação por ano, trilíngue (francês por padrão), com link para a fonte. Sem busca por texto integral - a consulta é apenas por coordenada."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Belgia",
+    "en": "Belgium",
+    "pt": "Bélgica"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx be-eli-mcp"
+   },
+   "version": "0.1.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/be-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-be-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-be-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-be-eli-mcp"
+   },
+   "added_at": "2026-07-06",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "br-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Câmara dos Deputados i Congresso Nacional",
+    "en": "Camara dos Deputados & Congresso Nacional",
+    "pt": "Câmara dos Deputados & Congresso Nacional"
+   },
+   "problem": {
+    "pl": "Brazylia to największy pojedynczy rynek prawniczy na świecie (ok. 1,3 mln adwokatów OAB), ale śledzenie procesu legislacyjnego albo zdobycie weryfikowalnego cytatu obowiązującej ustawy wymagało ręcznego przeszukania osobnych portali.",
+    "en": "Brazil is the single largest legal market in the world (roughly 1.3M OAB-registered lawyers), yet tracking a bill's progress or getting a verifiable citation to an enacted law meant searching separate portals by hand.",
+    "pt": "O Brasil é o maior mercado jurídico do mundo (cerca de 1,3 milhão de advogados registrados na OAB), mas acompanhar a tramitação de um projeto de lei ou obter uma citação verificável de uma lei promulgada significava pesquisar portais separados manualmente."
+   },
+   "description": {
+    "pl": "Osiem keyless API w jednym pakiecie. Proces legislacyjny (Câmara dos Deputados), URN Lex ustaw uchwalonych z pełnym tekstem artykułu (Senado + normas.leg.br), status spraw w DataJud CNJ (STJ/TST/TSE/TRF/TJ/TRT/TRE). Cztery źródła zwracają teraz prawdziwy pełny tekst orzeczenia, nie tylko metadane: STJ (drugi najwyższy sąd Brazylii, od maja 2022), CARF (orzeczenia podatkowe), TST (Trybunał Pracy - 3,75 mln akordãos, 8,48 mln dokumentów) i TCU (Trybunał Obrachunkowy - 525 tys. akordãos w sprawach zamówień publicznych).",
+    "en": "Eight keyless APIs in one package. Legislative process (Camara dos Deputados), URN Lex for enacted laws with full article text (Senado + normas.leg.br), case status via DataJud CNJ (STJ/TST/TSE/TRF/TJ/TRT/TRE). Four sources now return real ruling full text, not just metadata: STJ (Brazil's second-highest court, from May 2022), CARF (tax rulings), TST (labor supreme court - 3.75M acordaos, 8.48M documents) and TCU (Federal Court of Accounts - 525K acordaos in procurement cases).",
+    "pt": "Três conectores sem chave em um único pacote: a API da Câmara dos Deputados (busca e obtenção de projetos de lei por número/tipo/ano), o resolvedor URN Lex do Senado (identificação, procedência no Diário Oficial da União, histórico de emendas e notas de inconstitucionalidade do STF para Normas Jurídicas promulgadas) e o normas.leg.br (o texto compilado real de um artigo específico, endereçado pela mesma URN Lex - não apenas uma citação). A situação processual e o histórico de andamento em 91 tribunais via a API pública DataJud/CNJ continuam sendo consultados sob demanda, não baixados em massa (restrição de redistribuição) - isso permanece apenas andamento/situação, não o texto integral da decisão."
+   },
+   "category": {
+    "pl": "prawo i proces legislacyjny",
+    "en": "law & legislative process",
+    "pt": "lei e processo legislativo"
+   },
+   "jurisdiction": {
+    "pl": "Brazylia",
+    "en": "Brazil",
+    "pt": "Brasil"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx br-eli-mcp"
+   },
+   "version": "0.6.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/br-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-br-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-br-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-br-eli-mcp"
+   },
+   "added_at": "2026-07-06",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "ca-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Justice Laws Website",
+    "en": "Justice Laws Website",
+    "pt": "Justice Laws Website"
+   },
+   "problem": {
+    "pl": "Kanadyjskie prawo federalne (ponad 136 tys. prawników wg FLSC) jest dwujęzyczne i rozproszone po kodach - bez konektora agent nie dotrze do właściwej wersji.",
+    "en": "Canadian federal law (over 136k lawyers per the FLSC) is bilingual and spread across codes - without a connector the agent can't reach the right version.",
+    "pt": "A legislação federal canadense (mais de 136 mil advogados segundo a FLSC) é bilíngue e distribuída por códigos - sem um conector o agente não alcança a versão certa."
+   },
+   "description": {
+    "pl": "Konektor do oficjalnego Justice Laws Website: metadane i pełny tekst XML ustaw i rozporządzeń federalnych po kodzie (np. \"C-46\"), dwujęzyczny EN/FR, z linkiem do źródła. Bez wyszukiwania pełnotekstowego (trzeba znać kod aktu) i bez orzecznictwa - ToS CanLII zabrania redystrybucji masowej.",
+    "en": "A connector to the official Justice Laws Website: metadata and full XML text for federal Acts and regulations by code (e.g. \"C-46\"), bilingual EN/FR, with a source link. No full-text search (you need the act's code) and no case law - CanLII's ToS bars bulk redistribution.",
+    "pt": "Um conector para o Justice Laws Website oficial: metadados e texto XML integral de leis federais e regulamentos por código (por exemplo, \"C-46\"), bilíngue EN/FR, com link para a fonte. Sem busca por texto integral (é preciso o código do ato) e sem jurisprudência - os termos de uso do CanLII proíbem a redistribuição em massa."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Kanada",
+    "en": "Canada",
+    "pt": "Canadá"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx ca-eli-mcp"
+   },
+   "version": "0.1.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/ca-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-ca-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-ca-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-ca-eli-mcp"
+   },
+   "added_at": "2026-07-06",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "ch-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Fedlex / ELI",
+    "en": "Fedlex / ELI",
+    "pt": "Fedlex / ELI"
+   },
+   "problem": {
+    "pl": "Szwajcarskie prawo federalne leży poza UE, ale mecenas w sprawie transgranicznej i tak po nie sięga - bez konektora agent go nie dotknie.",
+    "en": "Swiss federal law sits outside the EU, but a Polish lawyer on a cross-border matter still needs to reach it - impossible without a connector.",
+    "pt": "A legislação federal suíça fica fora da UE, mas um advogado polonês em um caso transfronteiriço ainda precisa alcançá-la - impossível sem um conector."
+   },
+   "description": {
+    "pl": "Konektor do Fedlex (SPARQL, bez klucza) - jedyny w całej flocie konektor spoza UE z NATYWNYM identyfikatorem ELI (ta sama ontologia jolux co luksemburski Legilux), wielojęzyczny DE/FR/IT/EN, z linkiem do źródła. Cytat szwajcarski to numer SR (Systematische Sammlung).",
+    "en": "A connector to Fedlex (SPARQL, keyless) - the only non-EU connector in the whole fleet with a genuinely NATIVE ELI identifier (the same jolux ontology as Luxembourg's Legilux), multilingual DE/FR/IT/EN, with a source link. The Swiss citation is the SR number (Systematische Sammlung).",
+    "pt": "Um conector para o Fedlex (SPARQL, sem chave) - o único conector fora da UE em toda a frota com identificador ELI genuinamente NATIVO (a mesma ontologia jolux do Legilux de Luxemburgo), multilíngue DE/FR/IT/EN, com link para a fonte. A citação suíça é o número SR (Systematische Sammlung)."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Szwajcaria",
+    "en": "Switzerland",
+    "pt": "Suíça"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx ch-eli-mcp"
+   },
+   "version": "0.1.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/ch-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-ch-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-ch-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-ch-eli-mcp"
+   },
+   "added_at": "2026-07-06",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "cl-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "LeyChile / BCN",
+    "en": "LeyChile / BCN",
+    "pt": "LeyChile / BCN"
+   },
+   "problem": {
+    "pl": "Chilijskie prawo (LeyChile) publikuje dane w otwartej ontologii RDF/OWL - rzadkość w regionie - ale bez konektora agent go nie przeszuka.",
+    "en": "Chilean law (LeyChile) publishes its data in an open RDF/OWL ontology - a rarity in the region - but it's unsearchable without a connector.",
+    "pt": "A legislação chilena (LeyChile) publica seus dados em uma ontologia RDF/OWL aberta - uma raridade na região - mas impossível de pesquisar sem um conector."
+   },
+   "description": {
+    "pl": "Konektor do SPARQL Biblioteki Kongresu Narodowego (BCN, bez klucza): wyszukiwanie i pobieranie norm (ustaw, dekretów, rozporządzeń) po identyfikatorze zasobu BCN, z linkiem do źródła. Metadane, bez pełnego tekstu.",
+    "en": "A connector to the National Congress Library's SPARQL endpoint (BCN, keyless): search and fetch norms (statutes, decrees, regulations) by BCN resource identifier, with a source link. Metadata only, no full text.",
+    "pt": "Um conector para o endpoint SPARQL da Biblioteca do Congresso Nacional (BCN, sem chave): busca e obtenção de normas (leis, decretos, regulamentos) por identificador de recurso BCN, com link para a fonte. Somente metadados, sem texto integral."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Chile",
+    "en": "Chile",
+    "pt": "Chile"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx cl-eli-mcp"
+   },
+   "version": "0.1.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/cl-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-cl-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-cl-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-cl-eli-mcp"
+   },
+   "added_at": "2026-07-06",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "co-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Corte Constitucional",
+    "en": "Corte Constitucional",
+    "pt": "Corte Constitucional"
+   },
+   "problem": {
+    "pl": "Kolumbia ma jeden z najwyższych na świecie wskaźników liczby prawników na mieszkańca (ok. 801 na 100 tys.), ale weryfikacja, czy dany wyrok Trybunału Konstytucyjnego istnieje i kto był sędzią sprawozdawcą, wymaga ręcznego przeszukania portalu.",
+    "en": "Colombia has one of the highest lawyer-to-population ratios in the world (roughly 801 per 100k), yet confirming a Constitutional Court ruling exists - and who the reporting justice was - means searching the portal by hand.",
+    "pt": "A Colômbia tem uma das maiores proporções de advogados por habitante do mundo (cerca de 801 por 100 mil), mas confirmar a existência de uma decisão da Corte Constitucional - e quem foi o relator - significa pesquisar o portal manualmente."
+   },
+   "description": {
+    "pl": "Konektor do otwartego zbioru danych datos.gov.co (Socrata): wyszukiwanie i pobieranie sentencias Corte Constitucional po sygnaturze (np. \"T-153/26\"), z linkiem do źródła. Metadane, bez pełnego tekstu w źródle.",
+    "en": "A connector to the open datos.gov.co dataset (Socrata): search and fetch Corte Constitucional sentencias by docket (\"T-153/26\"), with a source link. Metadata only - no full text in the source.",
+    "pt": "Um conector para o conjunto de dados aberto datos.gov.co (Socrata): busca e obtenção de sentencias da Corte Constitucional por número de processo (\"T-153/26\"), com link para a fonte. Somente metadados - sem texto integral na fonte."
+   },
+   "category": {
+    "pl": "orzecznictwo konstytucyjne",
+    "en": "constitutional case law",
+    "pt": "jurisprudência constitucional"
+   },
+   "jurisdiction": {
+    "pl": "Kolumbia",
+    "en": "Colombia",
+    "pt": "Colômbia"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx co-eli-mcp"
+   },
+   "version": "0.1.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/co-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-co-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-co-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-co-eli-mcp"
+   },
+   "added_at": "2026-07-06",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "cz-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "e-Sbirka / ELI",
+    "en": "e-Sbirka / ELI",
+    "pt": "e-Sbírka / ELI"
+   },
+   "problem": {
+    "pl": "Czeskie prawo skonsolidowane (e-Sbirka) jest dostępne przez SPARQL/RDF - bogate, ale poza zasięgiem agenta bez konektora.",
+    "en": "Czech consolidated law (e-Sbirka) is served over SPARQL/RDF - rich, but out of the agent's reach without a connector.",
+    "pt": "A legislação tcheca consolidada (e-Sbírka) é servida via SPARQL/RDF - rica, mas fora do alcance do agente sem um conector."
+   },
+   "description": {
+    "pl": "Konektor do otwartego SPARQL e-Sbirka (opendata.eselpoint.gov.cz): czeska legislacja z narodowym identyfikatorem ELI i linkiem do źródła. Pierwszy konektor linii na SPARQL. Jedenasty konektor UE linii eu-legal-mcp.",
+    "en": "A connector to the open e-Sbirka SPARQL endpoint (opendata.eselpoint.gov.cz): Czech legislation with a national ELI identifier and a source link. The line's first SPARQL connector. The eleventh EU connector in the eu-legal-mcp line.",
+    "pt": "Um conector para o endpoint SPARQL aberto do e-Sbírka (opendata.eselpoint.gov.cz): legislação tcheca com identificador ELI nacional e link para a fonte. O primeiro conector SPARQL da linha. O décimo primeiro conector da UE na linha eu-legal-mcp."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Czechy",
+    "en": "Czechia",
+    "pt": "República Tcheca"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx cz-eli-mcp"
+   },
+   "version": "0.1.1",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/cz-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-cz-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-cz-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-cz-eli-mcp"
+   },
+   "added_at": "2026-06-29",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "de-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "NeuRIS / ELI",
+    "en": "NeuRIS / ELI",
+    "pt": "NeuRIS / ELI"
+   },
+   "problem": {
+    "pl": "Niemieckie prawo federalne to osobny portal i własny format - bariera w sprawie transgranicznej.",
+    "en": "German federal law sits on its own portal in its own format - a wall for cross-border work.",
+    "pt": "A legislação federal alemã fica em portal próprio, em formato próprio - uma barreira para o trabalho transfronteiriço."
+   },
+   "description": {
+    "pl": "Konektor do oficjalnego NeuRIS (rechtsinformationen.bund.de): legislacja federalna z ELI oraz orzecznictwo z natywnym ECLI, każde z linkiem do źródła. Pierwszy konektor UE w linii eu-legal-mcp.",
+    "en": "A connector to the official NeuRIS (rechtsinformationen.bund.de): federal legislation with ELI and case law with native ECLI, each with a source link. The first EU connector in the eu-legal-mcp line.",
+    "pt": "Um conector para o NeuRIS oficial (rechtsinformationen.bund.de): legislação federal com ELI e jurisprudência com ECLI nativo, cada uma com link para a fonte. O primeiro conector da UE na linha eu-legal-mcp."
+   },
+   "category": {
+    "pl": "prawo i orzecznictwo",
+    "en": "law and case law",
+    "pt": "lei e jurisprudência"
+   },
+   "jurisdiction": {
+    "pl": "Niemcy",
+    "en": "Germany",
+    "pt": "Alemanha"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx de-eli-mcp"
+   },
+   "version": "0.3.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/de-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-de-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-de-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-de-eli-mcp"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "dk-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Retsinformation / ELI",
+    "en": "Retsinformation / ELI",
+    "pt": "Retsinformation / ELI"
+   },
+   "problem": {
+    "pl": "Duńskie ustawodawstwo leży w Retsinformation w formacie LexDania XML - bogatym, ale poza zasięgiem agenta bez konektora.",
+    "en": "Danish legislation lives in Retsinformation as LexDania XML - a rich format, but out of the agent's reach without a connector.",
+    "pt": "A legislação dinamarquesa vive no Retsinformation como XML LexDania - um formato rico, mas fora do alcance do agente sem um conector."
+   },
+   "description": {
+    "pl": "Konektor do otwartego Retsinformation (retsinformation.dk): duńska legislacja jako LexDania XML za natywnymi identyfikatorami ELI, bez klucza, z linkiem do źródła. Dziesiąty konektor UE linii eu-legal-mcp.",
+    "en": "A connector to the keyless, Open Data Retsinformation (retsinformation.dk): Danish law as LexDania XML behind native ELI identifiers, with a source link. The tenth EU connector in the eu-legal-mcp line.",
+    "pt": "Um conector para o Retsinformation aberto e sem chave (retsinformation.dk): legislação dinamarquesa como XML LexDania sob identificadores ELI nativos, com link para a fonte. O décimo conector da UE na linha eu-legal-mcp."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Dania",
+    "en": "Denmark",
+    "pt": "Dinamarca"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx dk-eli-mcp"
+   },
+   "version": "0.1.1",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/dk-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-dk-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-dk-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-dk-eli-mcp"
+   },
+   "added_at": "2026-06-29",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "es-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "BOE / ELI",
+    "en": "BOE / ELI",
+    "pt": "BOE / ELI"
+   },
+   "problem": {
+    "pl": "Hiszpańskie prawo skonsolidowane żyje w BOE - osobnym portalu i formacie, którego agent zwykle nie sięga.",
+    "en": "Spanish consolidated law lives in the BOE - a separate portal and format the agent usually can't reach.",
+    "pt": "A legislação espanhola consolidada vive no BOE - um portal e formato separado que o agente normalmente não alcança."
+   },
+   "description": {
+    "pl": "Konektor do otwartego API BOE (boe.es): skonsolidowana legislacja po identyfikatorze (id/ELI) z linkiem do źródła. Czwarty konektor linii eu-legal-mcp.",
+    "en": "A connector to the BOE open-data API (boe.es): consolidated legislation by id/ELI with a source link.",
+    "pt": "Um conector para a API de dados abertos do BOE (boe.es): legislação consolidada por id/ELI com link para a fonte."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Hiszpania",
+    "en": "Spain",
+    "pt": "Espanha"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx es-eli-mcp"
+   },
+   "version": "0.3.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/es-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-es-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-es-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-es-eli-mcp"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "fi-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Finlex / ELI",
+    "en": "Finlex / ELI",
+    "pt": "Finlex / ELI"
+   },
+   "problem": {
+    "pl": "Fińskie ustawy skonsolidowane są w Finlex, w formacie Akoma Ntoso - poza zasięgiem agenta bez konektora.",
+    "en": "Finland's consolidated statutes sit in Finlex, in Akoma Ntoso format - out of the agent's reach without a connector.",
+    "pt": "As leis finlandesas consolidadas ficam no Finlex, em formato Akoma Ntoso - fora do alcance do agente sem um conector."
+   },
+   "description": {
+    "pl": "Konektor do otwartego API Finlex (opendata.finlex.fi): skonsolidowane ustawy z identyfikatorem ELI i linkiem do źródła. Piąty konektor linii eu-legal-mcp.",
+    "en": "A connector to the Finlex open-data API (opendata.finlex.fi): consolidated statutes with an ELI identifier and a source link.",
+    "pt": "Um conector para a API de dados abertos do Finlex (opendata.finlex.fi): leis consolidadas com identificador ELI e link para a fonte."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Finlandia",
+    "en": "Finland",
+    "pt": "Finlândia"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx fi-eli-mcp"
+   },
+   "version": "0.1.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/fi-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-fi-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-fi-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-fi-eli-mcp"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "fr-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Legifrance / ECLI",
+    "en": "Legifrance / ECLI",
+    "pt": "Legifrance / ECLI"
+   },
+   "problem": {
+    "pl": "Francuskie prawo i orzecznictwo (Legifrance) są pod API PISTE - bez konektora i poświadczeń agent ich nie ruszy.",
+    "en": "French legislation and case law (Legifrance) sit behind the PISTE API - without a connector and credentials the agent can't reach them.",
+    "pt": "A legislação e a jurisprudência francesas (Legifrance) ficam atrás da API PISTE - sem um conector e credenciais, o agente não consegue alcançá-las."
+   },
+   "description": {
+    "pl": "Konektor do API Legifrance przez PISTE: legislacja (LODA, kody) i orzecznictwo (JURI) z natywnym ECLI. Wymaga darmowego konta PISTE (OAuth) - dlatego nie jest drop-in jak pozostałe.",
+    "en": "A connector to the Legifrance API via PISTE: legislation (LODA, codes) and case law (JURI) with native ECLI. Needs a free PISTE account (OAuth) - so it isn't drop-in like the others.",
+    "pt": "Um conector para a API do Legifrance via PISTE: legislação (LODA, códigos) e jurisprudência (JURI) com ECLI nativo. Requer conta PISTE gratuita (OAuth) - por isso não é pronto para uso imediato como os demais."
+   },
+   "category": {
+    "pl": "prawo i orzecznictwo",
+    "en": "law and case law",
+    "pt": "lei e jurisprudência"
+   },
+   "jurisdiction": {
+    "pl": "Francja",
+    "en": "France",
+    "pt": "França"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx fr-eli-mcp"
+   },
+   "version": "0.3.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/fr-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-fr-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-fr-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-fr-eli-mcp"
+   },
+   "requires_api_key": true,
+   "added_at": "2026-06-25",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "gb-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "legislation.gov.uk / ELI",
+    "en": "legislation.gov.uk / ELI",
+    "pt": "legislation.gov.uk / ELI"
+   },
+   "problem": {
+    "pl": "Prawo Wielkiej Brytanii - ustawy Parlamentu i akty wykonawcze Szkocji, Walii, Irlandii Północnej - leży poza zasięgiem agenta bez dedykowanego konektora.",
+    "en": "UK law - Acts of Parliament plus Scottish, Welsh and Northern Irish instruments - sits out of the agent's reach without a dedicated connector.",
+    "pt": "O direito do Reino Unido - leis do Parlamento mais instrumentos escoceses, galeses e norte-irlandeses - fica fora do alcance do agente sem um conector dedicado."
+   },
+   "description": {
+    "pl": "Konektor do legislation.gov.uk (The National Archives, bez klucza): ustawy Parlamentu, statutory instruments i odpowiedniki szkockie, walijskie i północnoirlandzkie z trwałym identyfikatorem. Plus orzecznictwo przez Find Case Law. Od wersji 0.3.0 dochodzi GOV.UK Search API - osiem typów dokumentów spoza sądów jednym zapytaniem: trybunały pracy (132 tys.), podręczniki HMRC (85 tys.), trybunał ds. nieruchomości (17 tys.), CMA i inne - razem ok. 243 tys. dodatkowych dokumentów. Dane na licencji Open Government Licence v3.0.",
+    "en": "A connector to legislation.gov.uk (The National Archives, keyless): Acts of Parliament, statutory instruments, and their Scottish, Welsh and Northern Irish equivalents with a persistent identifier. Plus case law via Find Case Law. As of v0.3.0, the GOV.UK Search API adds eight non-court document types in one query: employment tribunal decisions (132K), HMRC manual sections (85K), residential property tribunal decisions (17K), CMA cases and more - roughly 243K additional documents. Data under the Open Government Licence v3.0.",
+    "pt": "Um conector para o legislation.gov.uk oficial (The National Archives, sem chave): leis, instrumentos regulatórios e jurisprudência dos tribunais superiores com identificador estável próprio e link para a fonte. Dados sob a Open Government Licence v3.0."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Wielka Brytania",
+    "en": "United Kingdom",
+    "pt": "Reino Unido"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx gb-eli-mcp"
+   },
+   "version": "0.3.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/gb-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-gb-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-gb-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-gb-eli-mcp"
+   },
+   "added_at": "2026-07-06",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "hr-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Narodne novine / ELI",
+    "en": "Narodne novine / ELI",
+    "pt": "Narodne novine / ELI"
+   },
+   "problem": {
+    "pl": "Chorwackie ustawodawstwo (Narodne novine) jest publikowane z europejskim ELI w JSON-LD - poza zasięgiem agenta bez konektora.",
+    "en": "Croatian legislation (Narodne novine) is published with European ELI in JSON-LD - out of the agent's reach without a connector.",
+    "pt": "A legislação croata (Narodne novine) é publicada com ELI europeu em JSON-LD - fora do alcance do agente sem um conector."
+   },
+   "description": {
+    "pl": "Konektor do Narodne novine (nn.hr): chorwacka legislacja z europejskim identyfikatorem ELI (data.europa.eu) i linkiem do źródła. Dwunasty konektor UE linii eu-legal-mcp.",
+    "en": "A connector to Narodne novine (nn.hr): Croatian legislation with a European ELI identifier (data.europa.eu) and a source link. The twelfth EU connector in the eu-legal-mcp line.",
+    "pt": "Um conector para o Narodne novine (nn.hr): legislação croata com identificador ELI europeu (data.europa.eu) e link para a fonte. O décimo segundo conector da UE na linha eu-legal-mcp."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Chorwacja",
+    "en": "Croatia",
+    "pt": "Croácia"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx hr-eli-mcp"
+   },
+   "version": "0.1.1",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/hr-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-hr-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-hr-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-hr-eli-mcp"
+   },
+   "added_at": "2026-06-29",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "hu-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Nemzeti Jogszabálytár / ELI",
+    "en": "Nemzeti Jogszabalytar / ELI",
+    "pt": "Nemzeti Jogszabálytár / ELI"
+   },
+   "problem": {
+    "pl": "Węgierskie prawo (NJT) żyje w portalu bez API wyszukiwania - poza zasięgiem agenta bez konektora.",
+    "en": "Hungarian law (NJT) lives in a portal with no search API - out of the agent's reach without a connector.",
+    "pt": "A legislação húngara (NJT) vive em um portal sem API de busca - fora do alcance do agente sem um conector."
+   },
+   "description": {
+    "pl": "Konektor do oficjalnego Nemzeti Jogszabálytár - Węgry mają natywny identyfikator ELI od 2023 r.: akty po współrzędnej (typ/rok/wydawca/numer), pełny tekst i lista wydawców, z linkiem do źródła.",
+    "en": "A connector to the official Nemzeti Jogszabalytar - Hungary has had a native ELI identifier since 2023: acts by coordinate (type/year/issuer/serial), full text and a list of issuers, with a source link.",
+    "pt": "Um conector para o Nemzeti Jogszabálytár oficial - a Hungria tem identificador ELI nativo desde 2023: atos por coordenada (tipo/ano/órgão emissor/número de série), texto integral e lista de órgãos emissores, com link para a fonte."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Węgry",
+    "en": "Hungary",
+    "pt": "Hungria"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx hu-eli-mcp"
+   },
+   "version": "0.1.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/hu-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-hu-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-hu-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-hu-eli-mcp"
+   },
+   "added_at": "2026-07-06",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "ie-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Irish Statute Book / ELI",
+    "en": "Irish Statute Book / ELI",
+    "pt": "Irish Statute Book / ELI"
+   },
+   "problem": {
+    "pl": "Irlandzkie ustawy i akty wykonawcze (SI) są w Irish Statute Book - osobnym zbiorze, którego agent nie sięga.",
+    "en": "Irish acts and statutory instruments sit in the Irish Statute Book - a separate collection the agent can't reach.",
+    "pt": "As leis e instrumentos regulatórios irlandeses ficam no Irish Statute Book - uma coleção separada que o agente não alcança."
+   },
+   "description": {
+    "pl": "Konektor do Irish Statute Book (irishstatutebook.ie): ustawy i SI po roku/numerze z identyfikatorem ELI i linkiem do źródła. Szósty konektor linii eu-legal-mcp.",
+    "en": "A connector to the Irish Statute Book (irishstatutebook.ie): acts and SIs by year/number with an ELI identifier and a source link.",
+    "pt": "Um conector para o Irish Statute Book (irishstatutebook.ie): leis e instrumentos regulatórios por ano/número com identificador ELI e link para a fonte."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Irlandia",
+    "en": "Ireland",
+    "pt": "Irlanda"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx ie-eli-mcp"
+   },
+   "version": "0.1.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/ie-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-ie-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-ie-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-ie-eli-mcp"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "il-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Kneset (OData)",
+    "en": "Knesset (OData)",
+    "pt": "Knesset (OData)"
+   },
+   "problem": {
+    "pl": "Izraelskie prawo (ustawy Knesetu) jest dostępne przez bogate oficjalne API OData, ale bez konektora agent go nie przeszuka.",
+    "en": "Israeli law (Knesset statutes) is available through a rich official OData API, but unsearchable without a connector.",
+    "pt": "O direito israelense (leis do Knesset) está disponível através de uma rica API OData oficial, mas impossível de pesquisar sem um conector."
+   },
+   "description": {
+    "pl": "Konektor do oficjalnego OData Knesetu (encja KNS_IsraelLaw): pełnotekstowe wyszukiwanie nazw ustaw po hebrajsku, status obowiązywania i flaga ustawy zasadniczej, z linkiem do źródła. Do tego opublikowane wersje ustaw (w tym teksty skonsolidowane) wraz z oficjalnymi PDF prosto z serwera Knesetu oraz lokalny indeks orzecznictwa (10 558 wyroków sądów rodzinnych, okręgowych, pracy i administracyjnych, zbiór HuggingFace) - licencja zbioru nieudokumentowana, dane bez dalszej redystrybucji.",
+    "en": "A connector to the official Knesset OData API (the KNS_IsraelLaw entity): full-text search of law names in Hebrew, in-force status and a Basic Law flag, with a source link. It also serves the published law versions (including consolidated texts) with the official PDFs straight from the Knesset's server, plus a local case-law index (10,558 judgments from family, district, labor and administrative courts, a HuggingFace dataset) - the dataset's license is undocumented, so this data is not for further redistribution.",
+    "pt": "Um conector para a API OData oficial do Knesset (a entidade KNS_IsraelLaw): busca por texto integral de nomes de leis em hebraico, status de vigência e sinalizador de Lei Básica, com link para a fonte. Somente metadados para o texto da lei - links de texto integral em PDF são um próximo passo. Agora também um índice local de jurisprudência (10.558 decisões de tribunais de família, distrito, trabalho e administrativo, um conjunto de dados do HuggingFace) - a licença do conjunto de dados não está documentada, então esses dados não devem ser redistribuídos."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Izrael",
+    "en": "Israel",
+    "pt": "Israel"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx il-eli-mcp"
+   },
+   "version": "0.3.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/il-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-il-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-il-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-il-eli-mcp"
+   },
+   "added_at": "2026-07-06",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "it-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Normattiva / ELI",
+    "en": "Normattiva / ELI",
+    "pt": "Normattiva / ELI"
+   },
+   "problem": {
+    "pl": "Włochy to największy rynek prawniczy UE (ok. 240 tys. prawników), a Normattiva nie ma otwartego API - prawo żyje w portalu i formacie poza zasięgiem agenta.",
+    "en": "Italy is the EU's largest legal market (~240k lawyers), yet Normattiva has no open API - the statute book lives in a portal and format out of the agent's reach.",
+    "pt": "A Itália é o maior mercado jurídico da UE (cerca de 240 mil advogados), mas o Normattiva não tem API aberta - o corpo legal vive em um portal e formato fora do alcance do agente."
+   },
+   "description": {
+    "pl": "Konektor do oficjalnej Normattivy: ustawy i kodeksy jako Akoma Ntoso z identyfikatorem ELI i URN, pojedynczy artykuł (np. art. 2043 c.c.) i tekst w wersji na dowolny dzień (multivigenza). Plus orzecznictwo Trybunału Konstytucyjnego (Corte Costituzionale) od 1956 z natywnym ECLI. Do tego it_verify_citations - mechanicznie sprawdza cytowania włoskich przepisów w tekście odpowiedzi AI: zmyślony artykuł wychodzi na jaw, z podpowiedzią zakresu (art. 9999 nie istnieje, akt ma 51 artykułów). Każde z linkiem do źródła. Siedemnasty konektor UE linii eu-legal-mcp.",
+    "en": "A connector to the official Normattiva: statutes and codes as Akoma Ntoso with an ELI and URN identifier, a single article (e.g. art. 2043 of the Civil Code) and point-in-time text (multivigenza). Plus Constitutional Court (Corte Costituzionale) case law since 1956 with native ECLI. And it_verify_citations - it mechanically checks Italian statute citations in an AI answer: a made-up article gets caught, with a range hint (art. 9999 does not exist, the act has 51 articles). Each with a source link. The seventeenth EU connector in the eu-legal-mcp line.",
+    "pt": "Um conector para o Normattiva oficial: leis e códigos como Akoma Ntoso com identificador ELI e URN, um artigo específico (por exemplo, art. 2043 do Código Civil) e texto na versão vigente em determinada data (multivigenza). Além da jurisprudência da Corte Constitucional (Corte Costituzionale) desde 1956, com ECLI nativo. E o it_verify_citations - verifica mecanicamente as citações de normas italianas no texto de uma resposta de IA: um artigo inventado é flagrado, com uma dica de intervalo (o art. 9999 não existe, a lei tem 51 artigos). Cada um com link para a fonte. O décimo sétimo conector da UE na linha eu-legal-mcp."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Włochy",
+    "en": "Italy",
+    "pt": "Itália"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx italy-eli-mcp"
+   },
+   "version": "0.6.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/it-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-it-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-it-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-it-eli-mcp"
+   },
+   "added_at": "2026-07-01",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "jp-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "e-Gov",
+    "en": "e-Gov",
+    "pt": "e-Gov"
+   },
+   "problem": {
+    "pl": "Japońskie prawo - ustawy, rozporządzenia rządowe i ministerialne - jest dostępne przez oficjalne API, ale bez konektora agent go nie przeszuka.",
+    "en": "Japanese law - statutes, cabinet orders, ministerial ordinances - is available through an official API, but unsearchable without a connector.",
+    "pt": "O direito japonês - leis, decretos do gabinete, portarias ministeriais - está disponível através de API oficial, mas impossível de pesquisar sem um conector."
+   },
+   "description": {
+    "pl": "Konektor do keyless REST/JSON API e-Gov japońskiej Agencji Cyfrowej - jedyny w całej flocie z natywnym JSON, nie XML/Akoma Ntoso: wyszukiwanie po słowie kluczowym, pojedynczy artykuł i pełny tekst (obcinany dla bardzo długich ustaw), z linkiem do źródła.",
+    "en": "A connector to the keyless REST/JSON e-Gov API (Japan's Digital Agency) - the only connector in the whole fleet with native JSON, not XML/Akoma Ntoso: keyword search, a single article and full text (truncated for very large statutes), with a source link.",
+    "pt": "Um conector para a API REST/JSON sem chave do e-Gov (Agência Digital do Japão) - o único conector de toda a frota com JSON nativo, não XML/Akoma Ntoso: busca por palavra-chave, um artigo específico e texto integral (truncado para leis muito extensas), com link para a fonte."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Japonia",
+    "en": "Japan",
+    "pt": "Japão"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx jp-eli-mcp"
+   },
+   "version": "0.1.1",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/jp-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-jp-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-jp-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-jp-eli-mcp"
+   },
+   "added_at": "2026-07-06",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "kio-orzeczenia-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "KIO",
+    "en": "KIO",
+    "pt": "KIO"
+   },
+   "problem": {
+    "pl": "Orzeczenia Krajowej Izby Odwoławczej rozstrzygają spory o zamówienia publiczne, ale baza UZP jest osobna i niewygodna w przeszukaniu.",
+    "en": "National Appeal Chamber rulings settle public-procurement disputes, but the UZP database is separate and awkward to search.",
+    "pt": "As decisões da Câmara Nacional de Recursos resolvem disputas de licitação pública, mas a base da UZP é separada e difícil de pesquisar."
+   },
+   "description": {
+    "pl": "Konektor do publicznej bazy orzeczenia.uzp.gov.pl: rozstrzygnięcia KIO z sygnaturą i linkiem do źródła. Wczesny prototyp (v0.2.1).",
+    "en": "A connector to the public orzeczenia.uzp.gov.pl database: KIO rulings with a docket number and source link. Early prototype (v0.2.1).",
+    "pt": "Um conector para a base pública orzeczenia.uzp.gov.pl: decisões do KIO com número do processo e link para a fonte. Protótipo inicial (v0.2.1)."
+   },
+   "category": {
+    "pl": "zamówienia publiczne",
+    "en": "public procurement",
+    "pt": "licitações públicas"
+   },
+   "jurisdiction": {
+    "pl": "Polska",
+    "en": "Poland",
+    "pt": "Polônia"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx kio-orzeczenia-mcp"
+   },
+   "version": "0.2.1",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/kio-orzeczenia-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-kio-orzeczenia-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-kio-orzeczenia-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-kio-orzeczenia-mcp"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "legalize-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Legalize (prawo-jako-git)",
+    "en": "Legalize (law-as-git)",
+    "pt": "Legalize (law-as-git)"
+   },
+   "problem": {
+    "pl": "Prawo 32 państw żyje w osobnych portalach i formatach - agent nie dosięgnie żadnego bez osobnego konektora do każdego.",
+    "en": "The statute books of 32 countries live in separate portals and formats - out of the agent's reach without a connector for each one.",
+    "pt": "Os corpos legais de 32 países vivem em portais e formatos separados - fora do alcance do agente sem um conector para cada um."
+   },
+   "description": {
+    "pl": "Jeden serwer podaje legislację 32 jurysdykcji (21 z UE) z korpusu legalize-dev: każda ustawa jako plik Markdown z identyfikatorem w stylu ELI, historią zmian (każda reforma to commit) i linkiem do oficjalnego źródła. Bez klucza, lokalnie. Nasza nadbudowa nad otwartym korpusem MIT - jeden serwer zamiast konektora na każdy kraj.",
+    "en": "One server covers legislation for 32 jurisdictions (21 EU) from the legalize-dev corpus: each law as a Markdown file with an ELI-style identifier, a reform history (every change is a commit) and a link to the official source. Keyless, local. Our layer over the open MIT corpus - one server instead of a connector per country.",
+    "pt": "Um único servidor cobre a legislação de 32 jurisdições (21 da UE) a partir do corpus legalize-dev: cada lei como arquivo Markdown com identificador estilo ELI, histórico de reformas (cada mudança é um commit) e link para a fonte oficial. Sem chave, local. Nossa camada sobre o corpus aberto MIT - um servidor em vez de um conector por país."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "32 jurysdykcje",
+    "en": "32 jurisdictions",
+    "pt": "32 jurisdições"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx legalize-mcp"
+   },
+   "version": "0.1.1",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/legalize-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-legalize-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-legalize-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-legalize-mcp"
+   },
+   "added_at": "2026-07-03",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "lt-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "TAR / Rejestr aktów prawnych",
+    "en": "TAR / Register of Legal Acts",
+    "pt": "TAR / Registro de Atos Legais"
+   },
+   "problem": {
+    "pl": "Litewskie akty prawne (TAR) leżą w otwartych danych przez API Spinta - bez konektora agent ich nie przeszuka.",
+    "en": "Lithuanian legal acts (TAR) sit in open data behind the Spinta API - the agent can't search them without a connector.",
+    "pt": "Os atos legais lituanos (TAR) ficam em dados abertos atrás da API Spinta - o agente não consegue pesquisá-los sem um conector."
+   },
+   "description": {
+    "pl": "Konektor do litewskiego rejestru aktów (TAR) przez data.gov.lt (Spinta): skonsolidowane akty z pełnym tekstem, trwałym identyfikatorem i linkiem do źródła. Trzynasty konektor UE linii eu-legal-mcp.",
+    "en": "A connector to Lithuania's Register of Legal Acts (TAR) via data.gov.lt (Spinta): consolidated acts with full text, a stable identifier and a source link. The thirteenth EU connector in the eu-legal-mcp line.",
+    "pt": "Um conector para o Registro de Atos Legais da Lituânia (TAR) via data.gov.lt (Spinta): atos consolidados com texto integral, identificador estável e link para a fonte. O décimo terceiro conector da UE na linha eu-legal-mcp."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Litwa",
+    "en": "Lithuania",
+    "pt": "Lituânia"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx lt-eli-mcp"
+   },
+   "version": "0.1.1",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/lt-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-lt-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-lt-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-lt-eli-mcp"
+   },
+   "added_at": "2026-06-29",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "lu-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Legilux / ELI",
+    "en": "Legilux / ELI",
+    "pt": "Legilux / ELI"
+   },
+   "problem": {
+    "pl": "Luksemburskie prawo (Legilux) jest w formatach jolux RDF i Akoma Ntoso - bogate, ale poza zasięgiem agenta bez konektora.",
+    "en": "Luxembourg law (Legilux) comes as jolux RDF and Akoma Ntoso - rich formats, but out of the agent's reach without a connector.",
+    "pt": "O direito de Luxemburgo (Legilux) vem como RDF jolux e Akoma Ntoso - formatos ricos, mas fora do alcance do agente sem um conector."
+   },
+   "description": {
+    "pl": "Konektor do Legilux (data.legilux.public.lu): ELI-natywne metadane jolux i pełny tekst Akoma Ntoso, z linkiem do źródła.",
+    "en": "A connector to Legilux (data.legilux.public.lu): ELI-native jolux metadata and full Akoma Ntoso text, with a source link.",
+    "pt": "Um conector para o Legilux (data.legilux.public.lu): metadados ELI-nativos jolux e texto integral em Akoma Ntoso, com link para a fonte."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Luksemburg",
+    "en": "Luxembourg",
+    "pt": "Luxemburgo"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx lu-eli-mcp"
+   },
+   "version": "0.1.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/lu-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-lu-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-lu-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-lu-eli-mcp"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "mcp-eu-compliance",
+   "type": "konektor",
+   "name": {
+    "pl": "EU-Compliance",
+    "en": "EU-Compliance",
+    "pt": "EU-Compliance"
+   },
+   "problem": {
+    "pl": "14 regulacji UE digital/data/cyber (RODO, AI Act, DORA, NIS2, DSA, DMA, Data Act, CRA i dalej) - sięganie po dokładny artykuł podczas pracy to skakanie po PDF-ach.",
+    "en": "14 EU regulations across digital, data and cyber (GDPR, the AI Act, DORA, NIS2, DSA, DMA, Data Act, CRA and more) - reaching the exact article while you work means hopping across PDFs.",
+    "pt": "14 regulamentos da UE em digital, dados e cibersegurança (GDPR, AI Act, DORA, NIS2, DSA, DMA, Data Act, CRA e outros) - chegar ao artigo exato enquanto trabalha significa pular entre PDFs."
+   },
+   "description": {
+    "pl": "Offline korpus prawa UE (pełny tekst EUR-Lex w lokalnym SQLite FTS5, dosłownie, zero-LLM): dokładny artykuł pod ręką, bez miejsca na zmyślenie modelu.",
+    "en": "An offline corpus of EU law (full EUR-Lex text in local SQLite FTS5, verbatim, zero-LLM): the exact article at hand, with nothing for a model to invent.",
+    "pt": "Um corpus offline do direito da UE (texto integral do EUR-Lex em SQLite FTS5 local, literal, zero-LLM): o artigo exato na hora, sem nada para o modelo inventar."
+   },
+   "category": {
+    "pl": "zgodność",
+    "en": "compliance",
+    "pt": "compliance"
+   },
+   "jurisdiction": {
+    "pl": "UE",
+    "en": "EU",
+    "pt": "UE"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "npx",
+    "command": "npx -y @matematicsolutions/mcp-eu-compliance"
+   },
+   "version": "0.3.0",
+   "license": "MIT",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/mcp-eu-compliance",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-mcp-eu-compliance",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-mcp-eu-compliance",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-mcp-eu-compliance"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "mcp-eu-sparql",
+   "type": "konektor",
+   "name": {
+    "pl": "EUR-Lex / TSUE",
+    "en": "EUR-Lex / CJEU",
+    "pt": "EUR-Lex / CJUE"
+   },
+   "problem": {
+    "pl": "Prawo UE i orzecznictwo TSUE są rozsiane po EUR-Lex i repozytorium Cellar - precyzyjne wyszukanie ręcznie jest wolne.",
+    "en": "EU law and CJEU case law are spread across EUR-Lex and the Cellar repository - precise lookup by hand is slow.",
+    "pt": "A legislação da UE e a jurisprudência da CJUE estão espalhadas entre o EUR-Lex e o repositório Cellar - a busca precisa manual é lenta."
+   },
+   "description": {
+    "pl": "Konektor do SPARQL Urzędu Publikacji UE (EUR-Lex / Cellar): ~4 mln aktów prawa UE i orzeczeń TSUE, każdy z trwałym identyfikatorem i linkiem do źródła.",
+    "en": "A connector to the EU Publications Office SPARQL (EUR-Lex / Cellar): ~4M EU legal acts and CJEU rulings, each with a stable identifier and source link.",
+    "pt": "Um conector para o SPARQL do Serviço de Publicações da UE (EUR-Lex / Cellar): ~4M de atos do direito da UE e decisões da CJUE, cada um com identificador estável e link para a fonte."
+   },
+   "category": {
+    "pl": "prawo i TSUE",
+    "en": "law and CJEU",
+    "pt": "lei e CJUE"
+   },
+   "jurisdiction": {
+    "pl": "UE",
+    "en": "EU",
+    "pt": "UE"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "npx",
+    "command": "npx -y @matematicsolutions/mcp-eu-sparql"
+   },
+   "version": "1.2.0",
+   "license": "MIT",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/mcp-eu-sparql",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-mcp-eu-sparql",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-mcp-eu-sparql",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-mcp-eu-sparql"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "mcp-eureka",
+   "type": "konektor",
+   "name": {
+    "pl": "EUREKA / KIS",
+    "en": "EUREKA / KIS",
+    "pt": "EUREKA / KIS"
+   },
+   "problem": {
+    "pl": "517 tys. interpretacji indywidualnych KIS decyduje o skutkach podatkowych transakcji, ale baza EUREKA jest osobna i agent zwykle jej nie widzi.",
+    "en": "517k individual KIS rulings decide the tax consequences of a transaction, yet they sit in EUREKA behind a search UI no agent can drive.",
+    "pt": "517 mil interpretações individuais do KIS decidem os efeitos fiscais de uma transação, mas ficam no EUREKA atrás de uma busca que nenhum agente consegue operar."
+   },
+   "description": {
+    "pl": "Konektor do publicznego API EUREKA (eureka.mf.gov.pl): wyszukiwanie interpretacji KIS po treści i sygnaturze, pełny tekst, data wydania i link do źródła przy każdym dokumencie.",
+    "en": "A connector to the public EUREKA API (eureka.mf.gov.pl): full-text search of KIS rulings by content and case number, the complete text, issue date and a source link on every document.",
+    "pt": "Um conector para a API pública do EUREKA (eureka.mf.gov.pl): busca por texto integral das interpretações do KIS por conteúdo e número de processo, o texto completo, data de emissão e link para a fonte em cada documento."
+   },
+   "category": {
+    "pl": "interpretacje podatkowe",
+    "en": "tax rulings",
+    "pt": "interpretações fiscais"
+   },
+   "jurisdiction": {
+    "pl": "Polska",
+    "en": "Poland",
+    "pt": "Polônia"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "npx",
+    "command": "npx -y @matematicsolutions/mcp-eureka"
+   },
+   "version": "0.1.0",
+   "license": "MIT",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/mcp-eureka",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-mcp-eureka",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-mcp-eureka",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-mcp-eureka"
+   },
+   "added_at": "2026-07-10",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "mcp-fr-legal",
+   "type": "konektor",
+   "name": {
+    "pl": "FR-Legal / Legifrance",
+    "en": "FR-Legal / Legifrance",
+    "pt": "FR-Legal / Legifrance"
+   },
+   "problem": {
+    "pl": "Pełny tekst francuskich kodów i ustaw chcesz mieć lokalnie, bez konta PISTE i bez chmury - żeby cytat sprawdzić na miejscu.",
+    "en": "You want the full text of French codes and statutes locally, with no PISTE account and no cloud calls - so a citation can be checked on the spot.",
+    "pt": "Você quer o texto integral dos códigos e leis francesas localmente, sem conta PISTE e sem chamadas para a nuvem - para checar uma citação na hora."
+   },
+   "description": {
+    "pl": "Offline korpus prawa francuskiego (pełny tekst Legifrance/DILA w lokalnym SQLite FTS5, dosłownie, zero-LLM): 193 tys. przepisów kodów i ustaw LEGI, walidacja istnienia cytatu (fail-closed) i link do Legifrance przy każdym artykule. Bez klucza, drop-in - uzupełnia fr-eli-mcp, który działa live przez PISTE i obejmuje orzecznictwo.",
+    "en": "An offline corpus of French law (full Legifrance/DILA text in a local SQLite FTS5 store, verbatim, zero-LLM): 193k provisions from the codes and LEGI statutes, a fail-closed citation-exists check, and a Legifrance link on every article. No key, drop-in - it complements fr-eli-mcp, which runs live via PISTE and covers case law.",
+    "pt": "Um corpus offline do direito francês (texto integral do Legifrance/DILA em base local SQLite FTS5, literal, zero-LLM): 193 mil dispositivos dos códigos e leis LEGI, uma checagem fail-closed de existência de citação e um link para o Legifrance em cada artigo. Sem chave, pronto para uso - complementa o fr-eli-mcp, que roda ao vivo via PISTE e cobre jurisprudência."
+   },
+   "category": {
+    "pl": "prawo (pełny tekst)",
+    "en": "law (full text)",
+    "pt": "lei (texto integral)"
+   },
+   "jurisdiction": {
+    "pl": "Francja",
+    "en": "France",
+    "pt": "França"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "npx",
+    "command": "npx -y @matematicsolutions/mcp-fr-legal"
+   },
+   "version": "0.1.1",
+   "license": "MIT",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/mcp-fr-legal",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-mcp-fr-legal",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-mcp-fr-legal",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-mcp-fr-legal"
+   },
+   "added_at": "2026-07-04",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "mcp-isap",
+   "type": "konektor",
+   "name": {
+    "pl": "ISAP / Sejm ELI",
+    "en": "ISAP / Sejm ELI",
+    "pt": "ISAP / Sejm ELI"
+   },
+   "problem": {
+    "pl": "Dziennik Ustaw i Monitor Polski to setki tysięcy aktów - ręczne znalezienie właściwej wersji przepisu pożera czas.",
+    "en": "The Journal of Laws and Monitor Polski run to hundreds of thousands of acts - finding the right version of a provision by hand eats your time.",
+    "pt": "O Diário Oficial de Leis e o Monitor Polski somam centenas de milhares de atos - encontrar a versão certa de um dispositivo manualmente consome seu tempo."
+   },
+   "description": {
+    "pl": "Konektor do API ELI Kancelarii Sejmu: 96 tys. aktów od 1918 r., stabilny identyfikator ELI i link do źródła przy każdym przepisie.",
+    "en": "A connector to the Sejm's ELI API: 96k acts since 1918, with a stable ELI identifier and a source link on every provision.",
+    "pt": "Um conector para a API ELI do Sejm: 96 mil atos desde 1918, com identificador ELI estável e link para a fonte em cada dispositivo."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Polska",
+    "en": "Poland",
+    "pt": "Polônia"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "npx",
+    "command": "npx -y @matematicsolutions/mcp-isap"
+   },
+   "version": "1.1.1",
+   "license": "MIT",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/mcp-isap",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-mcp-isap",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-mcp-isap",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-mcp-isap"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "mcp-krs",
+   "type": "konektor",
+   "name": {
+    "pl": "KRS",
+    "en": "KRS",
+    "pt": "KRS"
+   },
+   "problem": {
+    "pl": "Powiązania spółek, zarząd, wspólnicy - ręczne czytanie odpisów KRS jest wolne i podatne na błąd.",
+    "en": "Company ties, boards, shareholders - reading KRS extracts by hand is slow and error-prone.",
+    "pt": "Vínculos societários, diretoria, acionistas - ler manualmente extratos do KRS é lento e sujeito a erro."
+   },
+   "description": {
+    "pl": "Konektor do oficjalnego, darmowego API KRS Ministerstwa Sprawiedliwości: dane rejestrowe wprost do agenta.",
+    "en": "A connector to the Ministry of Justice's official, free KRS API: company-register data straight to the agent.",
+    "pt": "Um conector para a API oficial e gratuita do KRS do Ministério da Justiça: dados do registro de empresas direto no agente."
+   },
+   "category": {
+    "pl": "rejestr",
+    "en": "company registry",
+    "pt": "registro de empresas"
+   },
+   "jurisdiction": {
+    "pl": "Polska",
+    "en": "Poland",
+    "pt": "Polônia"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "npx",
+    "command": "npx -y @matematicsolutions/mcp-krs"
+   },
+   "version": "1.1.1",
+   "license": "MIT",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/mcp-krs",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-mcp-krs",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-mcp-krs",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-mcp-krs"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "mcp-nsa",
+   "type": "konektor",
+   "name": {
+    "pl": "NSA + WSA (CBOSA)",
+    "en": "NSA + WSA (CBOSA)",
+    "pt": "NSA + WSA (CBOSA)"
+   },
+   "problem": {
+    "pl": "Polskie orzecznictwo RODO, podatkowe i administracyjne żyje w CBOSA - osobnej bazie, której agent zwykle nie widzi.",
+    "en": "Polish GDPR, tax and administrative case law lives in CBOSA - a separate database the agent usually can't see.",
+    "pt": "A jurisprudência polonesa em proteção de dados, tributária e administrativa vive no CBOSA - uma base separada que o agente normalmente não enxerga."
+   },
+   "description": {
+    "pl": "Konektor do CBOSA (NSA + 16 WSA): 2,39 mln orzeczeń administracyjnych z sygnaturą i linkiem do źródła.",
+    "en": "A connector to CBOSA (NSA + 16 regional courts): 2.39M administrative rulings with a docket number and source link.",
+    "pt": "Um conector para o CBOSA (NSA + 16 tribunais regionais): 2,39 milhões de decisões administrativas com número do processo e link para a fonte."
+   },
+   "category": {
+    "pl": "sądy administracyjne",
+    "en": "administrative courts",
+    "pt": "tribunais administrativos"
+   },
+   "jurisdiction": {
+    "pl": "Polska",
+    "en": "Poland",
+    "pt": "Polônia"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "npx",
+    "command": "npx -y @matematicsolutions/mcp-nsa"
+   },
+   "version": "1.2.0",
+   "license": "MIT",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/mcp-nsa",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-mcp-nsa",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-mcp-nsa",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-mcp-nsa"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "mcp-saos",
+   "type": "konektor",
+   "name": {
+    "pl": "SAOS",
+    "en": "SAOS",
+    "pt": "SAOS"
+   },
+   "problem": {
+    "pl": "Orzecznictwo sądów powszechnych i Sądu Najwyższego rozsiane po portalach - kopiujesz sygnatury i gubisz źródło.",
+    "en": "Common-court and Supreme Court rulings are scattered across portals - you copy the docket number and lose the source.",
+    "pt": "As decisões dos tribunais comuns e do Supremo Tribunal estão espalhadas por diversos portais - você copia o número do processo e perde a fonte."
+   },
+   "description": {
+    "pl": "Konektor do API SAOS: 537 tys. orzeczeń (sądy powszechne, SN, TK, KIO) - pełne treści, sygnatura i link do źródła przy każdym wyroku. Do tego citator saos_cite_check - sprawdza, czy wyrok nadal jest aktualny: czy późniejsze orzeczenia odstępują od jego poglądu i czy zapadła uchwała składu powiększonego (11 zweryfikowanych fraz przełamania linii orzeczniczej). Z jawnym zastrzeżeniem, że baza SAOS nie obejmuje wszystkich orzeczeń.",
+    "en": "A connector to the SAOS API: 537k rulings (common courts, Supreme Court, Constitutional Tribunal, KIO) - full text, docket number and source link on every one. Plus a citator, saos_cite_check - it checks whether a ruling is still good law: whether later judgments depart from its view and whether an enlarged-panel resolution exists, using 11 verified phrases that flag a break in the case line. With an explicit caveat that SAOS does not hold every ruling.",
+    "pt": "Um conector para a API do SAOS: 537 mil decisões (tribunais comuns, STJ, Tribunal Constitucional, KIO) - texto integral, número do processo e link para a fonte em cada julgado. Inclui o citator saos_cite_check - verifica se a decisão continua válida: se julgados posteriores se afastam do entendimento e se existe decisão de colegiado ampliado (11 frases verificadas de ruptura da linha jurisprudencial). Com ressalva explícita de que o SAOS não reúne todas as decisões."
+   },
+   "category": {
+    "pl": "orzecznictwo",
+    "en": "case law",
+    "pt": "jurisprudência"
+   },
+   "jurisdiction": {
+    "pl": "Polska",
+    "en": "Poland",
+    "pt": "Polônia"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "npx",
+    "command": "npx -y @matematicsolutions/mcp-saos"
+   },
+   "version": "1.2.0",
+   "license": "MIT",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/mcp-saos",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-mcp-saos",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-mcp-saos",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-mcp-saos"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "mt-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Legislation.mt / ELI",
+    "en": "Legislation.mt / ELI",
+    "pt": "Legislation.mt / ELI"
+   },
+   "problem": {
+    "pl": "Maltańskie prawo (Legislation.mt) jest publikowane z ELI i pełnym tekstem w PDF - poza zasięgiem agenta bez konektora.",
+    "en": "Maltese law (Legislation.mt) is published with ELI and full text as PDF - out of the agent's reach without a connector.",
+    "pt": "O direito de Malta (Legislation.mt) é publicado com ELI e texto integral em PDF - fora do alcance do agente sem um conector."
+   },
+   "description": {
+    "pl": "Konektor do maltańskiego Legislation.mt: metadane z narodowym identyfikatorem ELI i pełny tekst z oficjalnego PDF, z linkiem do źródła. Szesnasty konektor UE linii eu-legal-mcp.",
+    "en": "A connector to Malta's Legislation.mt: metadata with a national ELI identifier and full text from the official PDF, with a source link. The sixteenth EU connector in the eu-legal-mcp line.",
+    "pt": "Um conector para o Legislation.mt de Malta: metadados com identificador ELI nacional e texto integral extraído do PDF oficial, com link para a fonte. O décimo sexto conector da UE na linha eu-legal-mcp."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Malta",
+    "en": "Malta",
+    "pt": "Malta"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx mt-eli-mcp"
+   },
+   "version": "0.1.1",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/mt-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-mt-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-mt-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-mt-eli-mcp"
+   },
+   "added_at": "2026-06-30",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "my-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Laws of Malaysia Online",
+    "en": "Laws of Malaysia Online",
+    "pt": "Laws of Malaysia Online"
+   },
+   "problem": {
+    "pl": "Malezyjskie ustawy zasadnicze są publikowane wyłącznie jako PDF, bez API wyszukiwania - poza zasięgiem agenta bez konektora.",
+    "en": "Malaysia's principal Acts are published as PDF only, with no search API - out of the agent's reach without a connector.",
+    "pt": "As leis principais da Malásia são publicadas somente em PDF, sem API de busca - fora do alcance do agente sem um conector."
+   },
+   "description": {
+    "pl": "Konektor do Laws of Malaysia Online (Attorney-General's Chambers): pobieranie aktu po numerze i pełny tekst wyekstrahowany z oficjalnego PDF, z linkiem do źródła. MVP obejmuje ustawy zasadnicze - nowelizacje i akty wykonawcze poza zakresem.",
+    "en": "A connector to Laws of Malaysia Online (Attorney-General's Chambers): fetch an act by number and full text extracted from the official PDF, with a source link. MVP covers principal Acts only - amendments and subsidiary legislation are out of scope.",
+    "pt": "Um conector para o Laws of Malaysia Online (Câmaras do Procurador-Geral): obtenção de uma lei por número e texto integral extraído do PDF oficial, com link para a fonte. O MVP cobre apenas leis principais - emendas e legislação subsidiária estão fora do escopo."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Malezja",
+    "en": "Malaysia",
+    "pt": "Malásia"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx my-eli-mcp"
+   },
+   "version": "0.1.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/my-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-my-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-my-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-my-eli-mcp"
+   },
+   "added_at": "2026-07-06",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "nl-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "BWB / KOOP",
+    "en": "BWB / KOOP",
+    "pt": "BWB / KOOP"
+   },
+   "problem": {
+    "pl": "Holenderskie prawo skonsolidowane (BWB) wymaga ustalenia wersji obowiązującej na dany dzień - ręcznie to żmudne.",
+    "en": "Dutch consolidated law (BWB) needs the version in force on a given date - tedious to pin down by hand.",
+    "pt": "A legislação holandesa consolidada (BWB) exige a versão vigente em uma data específica - trabalhoso de apurar manualmente."
+   },
+   "description": {
+    "pl": "Konektor do KOOP SRU (BWB) i Rechtspraak Open Data: akty obowiązujące na wybrany dzień oraz orzecznictwo po natywnym ECLI, każde z linkiem do źródła. Szósty konektor UE linii eu-legal-mcp.",
+    "en": "A connector to KOOP SRU (BWB) and Rechtspraak Open Data: acts in force on a chosen date and case law by native ECLI, each with a source link. 3.7M+ rulings in reach.",
+    "pt": "Um conector para o KOOP SRU (BWB) e o Rechtspraak Open Data: atos vigentes em data escolhida e jurisprudência por ECLI nativo, cada um com link para a fonte. Mais de 3,7 milhões de decisões ao alcance."
+   },
+   "category": {
+    "pl": "prawo i orzecznictwo",
+    "en": "law and case law",
+    "pt": "lei e jurisprudência"
+   },
+   "jurisdiction": {
+    "pl": "Holandia",
+    "en": "Netherlands",
+    "pt": "Holanda"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx nl-eli-mcp"
+   },
+   "version": "0.2.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/nl-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-nl-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-nl-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-nl-eli-mcp"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "pk-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Pakistan Code + SN Pakistanu",
+    "en": "Pakistan Code + Supreme Court",
+    "pt": "Pakistan Code + Suprema Corte"
+   },
+   "problem": {
+    "pl": "Pakistan nie wystawia żadnego maszynowego API do prawa - oficjalny portal da się tylko czytać oczami, więc agent nie sięgnie ani po ustawy, ani po wyroki.",
+    "en": "Pakistan publishes no machine-readable legal API - the official portal is readable only by eye, so an agent can reach neither the statutes nor the judgments.",
+    "pt": "O Paquistão não publica nenhuma API jurídica legível por máquina - o portal oficial só se lê a olho nu, então o agente não alcança nem as leis nem os julgados."
+   },
+   "description": {
+    "pl": "Konektor korpusowy: 967 ustaw federalnych (pełny tekst z oficjalnych PDF pakistancode.gov.pk, stan na styczeń 2025) i 1414 wyroków Sądu Najwyższego (pełny tekst, stan na lipiec 2024) z wyszukiwaniem pełnotekstowym. Każda odpowiedź z cytatem i linkiem do źródła, a konektor sam deklaruje, na jaki dzień jest aktualny - uczciwie, bez udawania prawa na dziś.",
+    "en": "A corpus-based connector: 967 federal statutes (full text from the official pakistancode.gov.pk PDFs, as of January 2025) and 1,414 Supreme Court judgments (full text, as of July 2024), with full-text search. Every response carries a citation and a source link, and the connector states how current it is itself - honest, no pretending to be current law.",
+    "pt": "Um conector baseado em corpus: 967 leis federais (texto integral dos PDFs oficiais de pakistancode.gov.pk, em janeiro de 2025) e 1.414 acórdãos da Suprema Corte (texto integral, em julho de 2024), com busca por texto integral. Cada resposta traz uma citação e um link para a fonte, e o conector declara por si mesmo o quão atual é - honesto, sem fingir ser lei vigente."
+   },
+   "category": {
+    "pl": "prawo i orzecznictwo",
+    "en": "law and case law",
+    "pt": "direito e jurisprudência"
+   },
+   "jurisdiction": {
+    "pl": "Pakistan",
+    "en": "Pakistan",
+    "pt": "Paquistão"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx pk-eli-mcp"
+   },
+   "version": "0.2.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/pk-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-pk-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-pk-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-pk-eli-mcp"
+   },
+   "added_at": "2026-07-10",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "ro-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Portal Legislativ",
+    "en": "Portal Legislativ",
+    "pt": "Portal Legislativ"
+   },
+   "problem": {
+    "pl": "Rumuńskie prawo (Portal Legislativ) jest dostępne przez SOAP API - poza zasięgiem agenta bez konektora.",
+    "en": "Romanian law (Portal Legislativ) is available through a SOAP API - out of the agent's reach without a connector.",
+    "pt": "A legislação romena (Portal Legislativ) está disponível através de uma API SOAP - fora do alcance do agente sem um conector."
+   },
+   "description": {
+    "pl": "Konektor do rumuńskiego Portalu Legislativ (legislatie.just.ro): pełny tekst aktów po numerze, roku i typie, z trwałym identyfikatorem i linkiem do źródła. Piętnasty konektor UE linii eu-legal-mcp.",
+    "en": "A connector to Romania's Portal Legislativ (legislatie.just.ro): full act text by number, year and type, with a stable identifier and a source link. The fifteenth EU connector in the eu-legal-mcp line.",
+    "pt": "Um conector para o Portal Legislativ da Romênia (legislatie.just.ro): texto integral do ato por número, ano e tipo, com identificador estável e link para a fonte. O décimo quinto conector da UE na linha eu-legal-mcp."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Rumunia",
+    "en": "Romania",
+    "pt": "Romênia"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx ro-eli-mcp"
+   },
+   "version": "0.1.1",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/ro-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-ro-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-ro-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-ro-eli-mcp"
+   },
+   "added_at": "2026-06-30",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "se-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "SFS / Riksdagen",
+    "en": "SFS / Riksdagen",
+    "pt": "SFS / Riksdagen"
+   },
+   "problem": {
+    "pl": "Szwedzkie ustawy (SFS) leżą w otwartych danych Riksdagu - bez konektora agent ich nie przeszuka.",
+    "en": "Swedish statutes (SFS) sit in the Riksdag's open data - without a connector the agent can't search them.",
+    "pt": "As leis suecas (SFS) ficam nos dados abertos do Riksdag - sem um conector o agente não consegue pesquisá-las."
+   },
+   "description": {
+    "pl": "Konektor do open-data API Riksdagu (SFS): skonsolidowane ustawy z trwałym identyfikatorem i linkiem do źródła. Siódmy konektor UE linii eu-legal-mcp.",
+    "en": "A connector to the Riksdag open-data API (SFS): consolidated acts with a persistent identifier and a source link.",
+    "pt": "Um conector para a API de dados abertos do Riksdag (SFS): atos consolidados com identificador persistente e link para a fonte."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Szwecja",
+    "en": "Sweden",
+    "pt": "Suécia"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx se-eli-mcp"
+   },
+   "version": "0.1.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/se-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-se-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-se-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-se-eli-mcp"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "sg-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Singapore Statutes Online",
+    "en": "Singapore Statutes Online",
+    "pt": "Singapore Statutes Online"
+   },
+   "problem": {
+    "pl": "Singapurskie prawo (SSO) nie udostępnia wyszukiwania - robots.txt portalu blokuje ścieżkę wyszukiwarki - więc bez konektora agent może tylko przeglądać ręcznie.",
+    "en": "Singapore Statutes Online (SSO) offers no search - its robots.txt disallows the search path - so without a connector the agent can only browse by hand.",
+    "pt": "O Singapore Statutes Online (SSO) não oferece busca - seu robots.txt bloqueia o caminho de pesquisa - então, sem um conector, o agente só consegue navegar manualmente."
+   },
+   "description": {
+    "pl": "Konektor do Singapore Statutes Online: przegląd ustaw (respektujemy ograniczenie robots.txt - bez wyszukiwania pełnotekstowego), pojedynczy przepis i pełny tekst, z linkiem do źródła. Pierwszy konektor floty z prawdziwym parserem HTML.",
+    "en": "A connector to Singapore Statutes Online: browse acts (no full-text search, respecting the robots.txt restriction), a single provision and full text, with a source link. The fleet's first connector with a genuine HTML parser.",
+    "pt": "Um conector para o Singapore Statutes Online: navegação por leis (sem busca de texto integral, respeitando a restrição do robots.txt), um dispositivo específico e texto integral, com link para a fonte. O primeiro conector da frota com um parser de HTML genuíno."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Singapur",
+    "en": "Singapore",
+    "pt": "Singapura"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx sg-eli-mcp"
+   },
+   "version": "0.1.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/sg-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-sg-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-sg-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-sg-eli-mcp"
+   },
+   "added_at": "2026-07-06",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "sk-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Slov-Lex / ELI",
+    "en": "Slov-Lex / ELI",
+    "pt": "Slov-Lex / ELI"
+   },
+   "problem": {
+    "pl": "Słowackie prawo skonsolidowane (Slov-Lex) leży w portalu, którego tekstu agent nie sięga bez konektora.",
+    "en": "Slovak consolidated law (Slov-Lex) lives in a portal whose text the agent can't reach without a connector.",
+    "pt": "A legislação eslovaca consolidada (Slov-Lex) vive em um portal cujo texto o agente não alcança sem um conector."
+   },
+   "description": {
+    "pl": "Konektor do statycznego Slov-Lex (static.slov-lex.sk): słowacka legislacja po roku/numerze z narodowym identyfikatorem ELI, wersjami konsolidowanymi i linkiem do źródła. Czternasty konektor UE linii eu-legal-mcp.",
+    "en": "A connector to the static Slov-Lex mirror (static.slov-lex.sk): Slovak legislation by year/number with a national ELI identifier, consolidated versions and a source link. The fourteenth EU connector in the eu-legal-mcp line.",
+    "pt": "Um conector para o espelho estático do Slov-Lex (static.slov-lex.sk): legislação eslovaca por ano/número com identificador ELI nacional, versões consolidadas e link para a fonte. O décimo quarto conector da UE na linha eu-legal-mcp."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Słowacja",
+    "en": "Slovakia",
+    "pt": "Eslováquia"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx sk-eli-mcp"
+   },
+   "version": "0.1.1",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/sk-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-sk-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-sk-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-sk-eli-mcp"
+   },
+   "added_at": "2026-06-30",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "tr-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Mevzuat Bilgi Sistemi (Bedesten)",
+    "en": "Mevzuat Bilgi Sistemi (Bedesten)",
+    "pt": "Mevzuat Bilgi Sistemi (Bedesten)"
+   },
+   "problem": {
+    "pl": "Tureckie prawo - ustawy, dekrety, rozporządzenia - leży w systemie Ministerstwa Sprawiedliwości bez klucza, ale bez konektora agent go nie przeszuka.",
+    "en": "Turkish law - statutes, decree-laws, regulations - sits in the Ministry of Justice's system, keyless but unsearchable without a connector.",
+    "pt": "O direito turco - leis, decretos-lei, regulamentos - fica no sistema do Ministério da Justiça, sem chave de acesso mas impossível de pesquisar sem um conector."
+   },
+   "description": {
+    "pl": "Konektor do keyless API Bedesten (Ministerstwo Sprawiedliwości): wyszukiwanie po typie aktu, pełny tekst i spis treści, z linkiem do mevzuat.gov.tr. Bez orzecznictwa - portale sądów najwyższych niedostępne z tej sieci lub bez API.",
+    "en": "A connector to the keyless Bedesten API (Ministry of Justice): search by legislation type, full text and a table of contents, with a link to mevzuat.gov.tr. No case law - the top courts' portals were unreachable from this network or have no API.",
+    "pt": "Um conector para a API Bedesten sem chave (Ministério da Justiça): busca por tipo de legislação, texto integral e sumário, com link para mevzuat.gov.tr. Sem jurisprudência - os portais dos tribunais superiores estavam inacessíveis nesta rede ou não possuem API."
+   },
+   "category": {
+    "pl": "legislacja",
+    "en": "legislation",
+    "pt": "legislação"
+   },
+   "jurisdiction": {
+    "pl": "Turcja",
+    "en": "Turkey",
+    "pt": "Turquia"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx tr-eli-mcp"
+   },
+   "version": "0.1.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/tr-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-tr-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-tr-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-tr-eli-mcp"
+   },
+   "added_at": "2026-07-06",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "us-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Congress.gov",
+    "en": "Congress.gov",
+    "pt": "Congress.gov"
+   },
+   "problem": {
+    "pl": "Amerykański rynek prawniczy liczy ponad 1,37 mln aktywnych prawników (ABA, 2025), ale śledzenie projektów ustaw Kongresu wymaga ręcznego przeszukania Congress.gov.",
+    "en": "The US legal market counts over 1.37M active lawyers (ABA, 2025), yet tracking a bill through Congress means searching Congress.gov by hand.",
+    "pt": "O mercado jurídico dos EUA conta com mais de 1,37 milhão de advogados ativos (ABA, 2025), mas acompanhar um projeto de lei no Congresso significa pesquisar manualmente o Congress.gov."
+   },
+   "description": {
+    "pl": "Pięć źródeł, dziesięć narzędzi tylko do odczytu. Proces legislacyjny Kongresu (Congress.gov), pełny tekst obowiązującego prawa jako pakiety GovInfo (U.S. Code, Statutes at Large, roczniki CFR, Federal Register), pełnotekstowe wyszukiwanie w Federal Register (1 mln+ dokumentów od 1994 r., w tym 8,5 tys. dokumentów prezydenckich) i w bieżącym CFR (413 tys. sekcji z historią zmian). Od wersji 0.3.0 dochodzi orzecznictwo przez CourtListener - 8,29 mln orzeczeń w pełnym tekście, z naciskiem na prawo stanowe (Kalifornia, Nowy Jork, Teksas), którego żadne źródło federalne nie pokrywa. Do ciężkiego federalnego case-law nadal polecamy dojrzałe konektory MIT (CourtListener-owe wrappery) - ten skupia się na stanach.",
+    "en": "Five sources, ten read-only tools. Congressional legislative process (Congress.gov), full enacted-law text as GovInfo packages (U.S. Code, Statutes at Large, annual CFR editions, Federal Register), full-text search over the Federal Register (1M+ documents since 1994, including 8,513 presidential documents) and the current CFR (413K sections with amendment history). As of v0.3.0, case law via CourtListener - 8.29M opinions in full text, with the headline value in state case law (California, New York, Texas), which no federal source covers. For heavy federal case-law work, the mature MIT-licensed CourtListener wrappers remain the recommendation - this connector's strength is the states.",
+    "pt": "Um conector para a API do Congress.gov: busca e obtenção de projetos de lei (\"H.R. 1, 118th Congress\") com link para a fonte. Agora também o GovInfo: texto integral de leis promulgadas (U.S. Code, Federal Register, CFR) por id de pacote. Deliberadamente NÃO cobre jurisprudência - já existem conectores maduros licenciados sob MIT para o CourtListener, então construir um terceiro duplicaria em vez de preencher uma lacuna."
+   },
+   "category": {
+    "pl": "proces legislacyjny",
+    "en": "legislative process",
+    "pt": "processo legislativo"
+   },
+   "jurisdiction": {
+    "pl": "USA",
+    "en": "USA",
+    "pt": "EUA"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx us-eli-mcp"
+   },
+   "version": "0.3.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/us-eli-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-us-eli-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-us-eli-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-us-eli-mcp"
+   },
+   "added_at": "2026-07-06",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "GenAI-Gurus/awesome-eu-ai-act",
+   "type": "kuratorski",
+   "name": {
+    "pl": "Zasoby AI Act",
+    "en": "AI Act resources",
+    "pt": "AI Act resources"
+   },
+   "problem": {
+    "pl": "Materiały do AI Act - kwestionariusze FRIA, szablony Aneksu IV, przewodniki oceny zgodności - są rozsiane po dziesiątkach stron.",
+    "en": "AI Act materials - FRIA questionnaires, Annex IV templates, conformity guides - are scattered across dozens of sites.",
+    "pt": "Materiais do AI Act - questionários de FRIA, modelos do Anexo IV, guias de conformidade - estão espalhados por dezenas de sites."
+   },
+   "description": {
+    "pl": "Kuratorska lista zasobów AI Act w domenie publicznej (CC0): szablony, oficjalne źródła, narzędzia oceny ryzyka. Surowiec do własnych procedur, bez tarcia licencyjnego.",
+    "en": "A CC0 public-domain curation of AI Act resources: templates, official sources, risk-classification tools. Raw material for your own procedures, with zero attribution friction.",
+    "pt": "Uma curadoria de domínio público CC0 de recursos do AI Act: modelos, fontes oficiais, ferramentas de classificação de risco. Material bruto para seus próprios procedimentos, sem qualquer atrito de atribuição."
+   },
+   "category": {
+    "pl": "zasoby",
+    "en": "resources",
+    "pt": "recursos"
+   },
+   "jurisdiction": {
+    "pl": "EU",
+    "en": "EU",
+    "pt": "UE"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "github",
+    "url": "https://github.com/GenAI-Gurus/awesome-eu-ai-act"
+   },
+   "version": null,
+   "license": null,
+   "author": "GenAI-Gurus",
+   "source_url": "https://github.com/GenAI-Gurus/awesome-eu-ai-act",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille",
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+   "type": "kuratorski",
+   "name": {
+    "pl": "Compliance GRC",
+    "en": "GRC compliance",
+    "pt": "GRC compliance"
+   },
+   "problem": {
+    "pl": "DORA, NIS2, CSRD, AI Act, ISO 42001 - każda rama zgodności to osobny zestaw wymagań i osobna interpretacja.",
+    "en": "DORA, NIS2, CSRD, AI Act, ISO 42001 - each compliance framework is its own set of requirements and its own reading.",
+    "pt": "DORA, NIS2, CSRD, AI Act, ISO 42001 - cada framework de compliance é um conjunto próprio de exigências e uma leitura própria."
+   },
+   "description": {
+    "pl": "Zestaw skilli GRC z osobną procedurą SKILL.md na każdą ramę - cały stos UE plus normy ISO i globalne. Punkt wyjścia, nie zastępstwo dla compliance officera.",
+    "en": "A GRC skill set with one SKILL.md per framework - the whole EU stack plus ISO and global standards. A starting point, not a replacement for your compliance officer.",
+    "pt": "Um conjunto de skills de GRC com um SKILL.md por framework - toda a pilha da UE mais ISO e padrões globais. Um ponto de partida, não um substituto para seu responsável por compliance."
+   },
+   "category": {
+    "pl": "zgodność",
+    "en": "compliance",
+    "pt": "compliance"
+   },
+   "jurisdiction": {
+    "pl": "EU",
+    "en": "EU",
+    "pt": "UE"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "github",
+    "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance"
+   },
+   "version": null,
+   "license": "MIT",
+   "author": "Sushegaad",
+   "source_url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille",
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "anthropics/claude-for-legal",
+   "type": "kuratorski",
+   "name": {
+    "pl": "Pakiet prawny Anthropic",
+    "en": "Anthropic legal suite",
+    "pt": "Anthropic legal suite"
+   },
+   "problem": {
+    "pl": "Chcesz zacząć z agentowymi workflowami prawnymi, ale nie masz sprawdzonego punktu wyjścia.",
+    "en": "You want to start with agentic legal workflows but have no vetted starting point.",
+    "pt": "Você quer começar com fluxos jurídicos agênticos mas não tem um ponto de partida validado."
+   },
+   "description": {
+    "pl": "Oficjalny zestaw Anthropic: ponad 100 procedur SKILL.md w 13 obszarach (M&A, prywatność, IP, zatrudnienie, ład AI). Metoda jest neutralna jurysdykcyjnie - pluginy privacy i ai-governance są najbliżej realiów UE.",
+    "en": "Anthropic's official suite: 100+ SKILL.md procedures across 13 practice areas (M&A, privacy, IP, employment, AI governance). The method is jurisdiction-neutral - the privacy and ai-governance plugins sit closest to EU practice.",
+    "pt": "A suíte oficial da Anthropic: mais de 100 procedimentos SKILL.md em 13 áreas de prática (fusões e aquisições, privacidade, propriedade intelectual, trabalhista, governança de IA). O método é neutro quanto à jurisdição - os plugins de privacidade e governança de IA são os mais próximos da prática da UE."
+   },
+   "category": {
+    "pl": "workflowy",
+    "en": "workflows",
+    "pt": "fluxos de trabalho"
+   },
+   "jurisdiction": {
+    "pl": "Zestaw",
+    "en": "Suite",
+    "pt": "Suíte"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "github",
+    "url": "https://github.com/anthropics/claude-for-legal"
+   },
+   "version": null,
+   "license": "Apache-2.0",
+   "author": "anthropics",
+   "source_url": "https://github.com/anthropics/claude-for-legal",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille",
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "apiotrowski-afk/commercial-legal-pl",
+   "type": "kuratorski",
+   "name": {
+    "pl": "Redakcja umów (prawo PL)",
+    "en": "Contract drafting (Polish law)",
+    "pt": "Redação contratual (direito polonês)"
+   },
+   "problem": {
+    "pl": "Umowa z modelu brzmi dobrze - tylko nie wiesz, która klauzula ma oparcie w KC i orzecznictwie SN, a którą model dopisał od siebie.",
+    "en": "A model's contract draft reads well - you just can't tell which clause is grounded in the Civil Code and Supreme Court case law, and which one it invented.",
+    "pt": "Um contrato saído do modelo soa bem - você só não sabe qual cláusula tem base no Código Civil e na jurisprudência do Supremo polonês, e qual ele inventou."
+   },
+   "description": {
+    "pl": "Skill radcy prawnego Adama Piotrowskiego (Kancelaria KTZR, Gdańsk): redakcja i analiza umów według prawa polskiego. Baza klauzul, doktryna z orzecznictwem SN i 12 Złotych Reguł; do tego workflow weryfikacji odesłań, tryb PRAWNIK/LAIK i sprawdzanie przepisów przez MCP (Sejm ELI). Instalujesz z repozytorium autora.",
+    "en": "A skill by Adam Piotrowski, radca prawny (KTZR law firm, Gdańsk): drafting and review of contracts under Polish law. A clause database, doctrine with Supreme Court case law and 12 drafting rules; plus a cross-reference check, LAWYER/LAYPERSON modes and statute verification via MCP (Sejm ELI). You install it from the author's repository.",
+    "pt": "Skill do radca prawny (advogado) Adam Piotrowski (escritório KTZR, Gdańsk): redação e análise de contratos sob o direito polonês. Base de cláusulas, doutrina com jurisprudência do Supremo e 12 regras de redação; além de verificação de remissões internas, modos ADVOGADO/LEIGO e checagem de normas via MCP (Sejm ELI). Você instala a partir do repositório do autor."
+   },
+   "category": {
+    "pl": "prawo PL",
+    "en": "Polish law",
+    "pt": "direito polonês"
+   },
+   "jurisdiction": {
+    "pl": "Umowy",
+    "en": "Contracts",
+    "pt": "Contratos"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "github",
+    "url": "https://github.com/apiotrowski-afk/commercial-legal-pl"
+   },
+   "version": null,
+   "license": "Apache-2.0",
+   "author": "apiotrowski-afk",
+   "source_url": "https://github.com/apiotrowski-afk/commercial-legal-pl",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille",
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-07-13",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "evolsb/claude-legal-skill",
+   "type": "kuratorski",
+   "name": {
+    "pl": "Przegląd umów (CUAD)",
+    "en": "Contract review (CUAD)",
+    "pt": "Contract review (CUAD)"
+   },
+   "problem": {
+    "pl": "Przy umowie międzynarodowej chcesz wiedzieć, które klauzule są ryzykowne i jak wypadają na tle rynku.",
+    "en": "For a cross-border contract you want to know which clauses are risky and how they compare to market.",
+    "pt": "Para um contrato transfronteiriço, você quer saber quais cláusulas são de risco e como se comparam ao mercado."
+   },
+   "description": {
+    "pl": "Zewnętrzny skill do przeglądu umów oparty na taksonomii CUAD: wykrywa ryzykowne klauzule, benchmark rynkowy, gotowe redline. Common-law u źródła - komplement do naszych „Klauzul pod lupą\" w sprawach transgranicznych.",
+    "en": "An external contract-review skill built on the CUAD taxonomy: flags risky clauses, market benchmarks, lawyer-ready redlines. Common-law native - complements our Polish clause checklist for cross-border work.",
+    "pt": "Um skill externo de revisão contratual construído sobre a taxonomia CUAD: sinaliza cláusulas de risco, benchmarks de mercado, redlines prontos para advogado. Nativo do common law - complementa nosso checklist de cláusulas para trabalho transfronteiriço."
+   },
+   "category": {
+    "pl": "common-law",
+    "en": "common-law",
+    "pt": "common-law"
+   },
+   "jurisdiction": {
+    "pl": "Umowy",
+    "en": "Contracts",
+    "pt": "Contratos"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "github",
+    "url": "https://github.com/evolsb/claude-legal-skill"
+   },
+   "version": null,
+   "license": "MIT",
+   "author": "evolsb",
+   "source_url": "https://github.com/evolsb/claude-legal-skill",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille",
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "microsoft/presidio",
+   "type": "kuratorski",
+   "name": {
+    "pl": "Presidio - anonimizacja PII",
+    "en": "Presidio - PII anonymisation",
+    "pt": "Presidio - anonimização de PII"
+   },
+   "problem": {
+    "pl": "Dane osobowe trzeba wykryć i zamaskować lokalnie, zanim tekst trafi do modelu - sam regex nie wystarcza.",
+    "en": "PII has to be detected and masked locally before text reaches a model - regex alone isn't enough.",
+    "pt": "Dados pessoais precisam ser detectados e mascarados localmente antes que o texto chegue a um modelo - regex sozinho não basta."
+   },
+   "description": {
+    "pl": "Dojrzały silnik Microsoftu do wykrywania i anonimizacji PII (NER, wzorce, suma kontrolna). Działa lokalnie, rozszerzalny o polskie rozpoznawanie PESEL, NIP, REGON. Komplement do skilla \"Let It Be\".",
+    "en": "Microsoft's mature PII detection and anonymisation engine (NER, patterns, checksums). Runs locally, extensible with Polish PESEL, NIP and REGON recognizers. Complements the \"Let It Be\" skill.",
+    "pt": "O motor maduro de detecção e anonimização de PII da Microsoft (NER, padrões, checksums). Roda localmente, extensível com reconhecedores de PESEL, NIP e REGON poloneses. Complementa o skill \"Let It Be\"."
+   },
+   "category": {
+    "pl": "narzędzie",
+    "en": "tool",
+    "pt": "ferramenta"
+   },
+   "jurisdiction": {
+    "pl": "RODO",
+    "en": "GDPR",
+    "pt": "GDPR"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "github",
+    "url": "https://github.com/microsoft/presidio"
+   },
+   "version": null,
+   "license": "MIT",
+   "author": "microsoft",
+   "source_url": "https://github.com/microsoft/presidio",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille",
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "morellid/ai-act-skill",
+   "type": "kuratorski",
+   "name": {
+    "pl": "AI Act dla inżynierów",
+    "en": "AI Act for engineers",
+    "pt": "AI Act for engineers"
+   },
+   "problem": {
+    "pl": "Rozporządzenie 2024/1689 obowiązuje, a zespół nie wie, czy jego system to wysokie ryzyko, GPAI, czy w ogóle podlega obowiązkom.",
+    "en": "Regulation 2024/1689 is in force and your team can't tell whether a system is high-risk, GPAI, or in scope at all.",
+    "pt": "O Regulamento 2024/1689 está em vigor e sua equipe não consegue dizer se um sistema é de alto risco, GPAI, ou sequer está no escopo."
+   },
+   "description": {
+    "pl": "Klasyfikuje system AI pod AI Act (zakazane, wysokie ryzyko, GPAI), rozdziela role dostawcy i wdrażającego, mapuje obowiązki z Art. 8-22 i 50, generuje FRIA. Poprawne dla całej UE.",
+    "en": "Classifies an AI system under the AI Act (prohibited, high-risk, GPAI), separates provider and deployer roles, maps the Art. 8-22 and 50 duties, generates a FRIA. Correct for the whole EU.",
+    "pt": "Classifica um sistema de IA sob o AI Act (proibido, alto risco, GPAI), separa os papéis de provedor e implantador, mapeia os deveres dos Art. 8-22 e 50, gera uma FRIA. Válido para toda a UE."
+   },
+   "category": {
+    "pl": "AI Act",
+    "en": "AI Act",
+    "pt": "AI Act"
+   },
+   "jurisdiction": {
+    "pl": "EU",
+    "en": "EU",
+    "pt": "UE"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "github",
+    "url": "https://github.com/morellid/ai-act-skill"
+   },
+   "version": null,
+   "license": "MIT",
+   "author": "morellid",
+   "source_url": "https://github.com/morellid/ai-act-skill",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille",
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "mukul975/Privacy-Data-Protection-Skills",
+   "type": "kuratorski",
+   "name": {
+    "pl": "Procedury prywatności",
+    "en": "Privacy procedures",
+    "pt": "Privacy procedures"
+   },
+   "problem": {
+    "pl": "Naruszenie danych, DPIA, klauzula informacyjna - powtarzalne procedury RODO, które za każdym razem składasz od zera.",
+    "en": "A data breach, a DPIA, a privacy notice - repeatable GDPR procedures you rebuild from scratch each time.",
+    "pt": "Um incidente de dados, uma DPIA, um aviso de privacidade - procedimentos de GDPR repetíveis que você reconstrói do zero toda vez."
+   },
+   "description": {
+    "pl": "Duża, ustrukturyzowana kolekcja procedur prywatności (RODO, AI Act, CCPA, LGPD i dalsze). Bierzesz część o RODO i AI Act jako gotowy szkielet i lokalizujesz do polskiej praktyki.",
+    "en": "A large, structured collection of privacy procedures (GDPR, AI Act, CCPA, LGPD and more). Take the GDPR and AI Act slice as a ready scaffold and localise it to your jurisdiction.",
+    "pt": "Uma coleção grande e estruturada de procedimentos de privacidade (GDPR, AI Act, CCPA, LGPD e mais). Use o recorte de GDPR e AI Act como um esqueleto pronto e adapte à sua jurisdição."
+   },
+   "category": {
+    "pl": "prywatność",
+    "en": "privacy",
+    "pt": "privacidade"
+   },
+   "jurisdiction": {
+    "pl": "RODO",
+    "en": "GDPR",
+    "pt": "GDPR"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "github",
+    "url": "https://github.com/mukul975/Privacy-Data-Protection-Skills"
+   },
+   "version": null,
+   "license": "Apache-2.0",
+   "author": "mukul975",
+   "source_url": "https://github.com/mukul975/Privacy-Data-Protection-Skills",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille",
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "adversarial-legal-review-en",
+   "type": "skill",
+   "name": {
+    "en": "Devil's advocate",
+    "pt": "Devil's advocate"
+   },
+   "problem": {
+    "en": "You send a high-stakes opinion without knowing where the other side will strike.",
+    "pt": "Você envia um parecer de alto risco sem saber onde a outra parte vai atacar."
+   },
+   "description": {
+    "en": "A red team builds the strongest version of your thesis, then attacks it - counter-arguments, contrary authority, procedural gaps - and tells you what survives. Cost-gated, for high-stakes deliverables only.",
+    "pt": "Um red team constrói a versão mais forte da sua tese e depois a ataca - contra-argumentos, jurisprudência contrária, brechas processuais - e diz o que sobrevive. Com controle de custo, apenas para entregas de alto risco."
+   },
+   "category": {
+    "en": "Verification",
+    "pt": "Verificação"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/adversarial-legal-review-en.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/adversarial-legal-review-en.zip",
+   "card_url": {
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "adversarial-legal-review-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Adwokat diabła"
+   },
+   "problem": {
+    "pl": "Wysyłasz opinię, nie wiedząc, gdzie uderzy druga strona."
+   },
+   "description": {
+    "pl": "Czerwony zespół atakuje Twoją tezę kontrargumentami i kontr-orzecznictwem - zanim zrobi to przeciwnik, sąd albo klient."
+   },
+   "category": {
+    "pl": "Weryfikacja"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/adversarial-legal-review-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/adversarial-legal-review-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "ai-act-triage-pl",
+   "type": "skill",
+   "name": {
+    "pl": "AI Act - szybki triage"
+   },
+   "problem": {
+    "pl": "Zanim zamówisz pełny audyt zgodności, chcesz wiedzieć, czy w ogóle masz problem - i jak duży."
+   },
+   "description": {
+    "pl": "Łańcuch ośmiu pytań (rozporządzenie UE 2024/1689): definicja systemu AI, zakazy, wysokie ryzyko, GPAI, przejrzystość, rola podmiotu - i karta triage z lukami do dalszej analizy."
+   },
+   "category": {
+    "pl": "AI Act"
+   },
+   "jurisdiction": {
+    "pl": "Governance"
+   },
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/ai-act-triage-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/ai-act-triage-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-07-05",
+   "updated_at": "2026-07-05"
+  },
+  {
+   "id": "atak-przeciwnika-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Atak przeciwnika"
+   },
+   "problem": {
+    "pl": "Wysyłasz pismo procesowe, nie wiedząc, gdzie uderzy pełnomocnik drugiej strony."
+   },
+   "description": {
+    "pl": "Jednoprzebiegowy sparing: wciela się w przeciwnika i szuka każdego sposobu, żeby pismo pokonać - teoria ataku, słabe ogniwa, ciosy na replikę. Tańszy stopień niż pełna debata adwokata diabła."
+   },
+   "category": {
+    "pl": "szybka"
+   },
+   "jurisdiction": {
+    "pl": "Weryfikacja"
+   },
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/atak-przeciwnika-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/atak-przeciwnika-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-07-05",
+   "updated_at": "2026-07-05"
+  },
+  {
+   "id": "authority-triage-en",
+   "type": "skill",
+   "name": {
+    "en": "Authority triage",
+    "pt": "Authority triage"
+   },
+   "problem": {
+    "en": "Before a legal answer exists, you need to know which source controls it - and starting research at the wrong layer wastes the whole pass.",
+    "pt": "Antes que uma resposta jurídica exista, você precisa saber qual fonte a controla - e começar a pesquisa na camada errada desperdiça toda a passagem."
+   },
+   "description": {
+    "en": "Maps an EU or member-state question onto source layers (Treaties, Charter, regulations and directives with a transposition check, CJEU case law, the national statutory chain, soft law), sets the verification order, flags collisions, and points to the right connector per layer.",
+    "pt": "Mapeia uma questão da UE ou de um Estado-membro em camadas de fontes (Tratados, Carta, regulamentos e diretivas com verificação de transposição, jurisprudência do TJUE, a cadeia estatutária nacional, soft law), define a ordem de verificação, sinaliza colisões e aponta o conector certo para cada camada."
+   },
+   "category": {
+    "en": "routing",
+    "pt": "roteamento"
+   },
+   "jurisdiction": {
+    "en": "EU law sources",
+    "pt": "Fontes de direito da UE"
+   },
+   "languages": [
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/authority-triage-en.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/authority-triage-en.zip",
+   "card_url": {
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-07-05",
+   "updated_at": "2026-07-05"
+  },
+  {
+   "id": "citation-extraction-en",
+   "type": "skill",
+   "name": {
+    "en": "Citation extraction",
+    "pt": "Citation extraction"
+   },
+   "problem": {
+    "en": "A citation you missed is a citation nobody checked.",
+    "pt": "Uma citação que você deixou passar é uma citação que ninguém verificou."
+   },
+   "description": {
+    "en": "Mechanically pulls every legal reference (ECLI, CELEX, Official Journal, case names, provisions), normalises them and resolves short references (ibid., supra) to their antecedent. The list feeds verification and EU retrieval.",
+    "pt": "Extrai mecanicamente toda referência jurídica (ECLI, CELEX, Jornal Oficial, nomes de casos, dispositivos), normaliza e resolve referências curtas (ibid., supra) ao seu antecedente. A lista alimenta a verificação e a busca na UE."
+   },
+   "category": {
+    "en": "Anti-hallucination",
+    "pt": "Anti-alucinação"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/citation-extraction-en.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/citation-extraction-en.zip",
+   "card_url": {
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "citation-grounding-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Cytaty pod kontrolą"
+   },
+   "problem": {
+    "pl": "AI zmyśla cytaty z wyroków i przepisów albo przekręca tezę sądu."
+   },
+   "description": {
+    "pl": "Mechanicznie sprawdza, czy cytat istnieje w źródle słowo w słowo i czy parafraza oddaje stanowisko - zanim wyślesz pismo."
+   },
+   "category": {
+    "pl": "Anti-halucynacja"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/citation-grounding-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/citation-grounding-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "clause-checklist-en",
+   "type": "skill",
+   "name": {
+    "en": "Clause checklist",
+    "pt": "Clause checklist"
+   },
+   "problem": {
+    "en": "You read what the contract says - but the most expensive clause is often the one that is not there.",
+    "pt": "Você lê o que o contrato diz - mas a cláusula mais cara costuma ser a que não está lá."
+   },
+   "description": {
+    "en": "Walks one contract against 41 clause categories (the CUAD taxonomy) and marks each present, absent or risky, quoting the clause when present. Extractive, common-law native.",
+    "pt": "Confere um contrato contra 41 categorias de cláusulas (a taxonomia CUAD) e marca cada uma como presente, ausente ou de risco, citando a cláusula quando presente. Extrativo, nativo do common law."
+   },
+   "category": {
+    "en": "Contracts",
+    "pt": "Contratos"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/clause-checklist-en.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/clause-checklist-en.zip",
+   "card_url": {
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "contract-review-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Audyt umów"
+   },
+   "problem": {
+    "pl": "Folder z 12 umowami i pytanie \"które mają klauzulę zmiany kontroli i jakie prawo właściwe\" - ręcznie to dzień przeklejania."
+   },
+   "description": {
+    "pl": "Przegląda cały folder PDF/DOCX do jednej tabeli .docx: strony, daty, klauzule, prawo właściwe, czerwone flagi i cytat źródłowy. Pseudonimizacja danych osobowych przed modelem (RODO), dowolny dostawca (Ollama lokalnie, Claude, Gemini, GPT)."
+   },
+   "category": {
+    "pl": "Umowy"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/contract-review-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/contract-review-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "deliverable-fidelity-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Nic nie wypadło"
+   },
+   "problem": {
+    "pl": "Cytaty się zgadzają, teza broni się w sporze, a najważniejsze ustalenie i tak znika z podsumowania dla zarządu."
+   },
+   "description": {
+    "pl": "Sprawdza, czy finalny dokument wiernie oddaje analizę - żadne czerwone ustalenie nie zniknęło ze streszczenia. Pominięta rzecz wysokiej wagi blokuje wysyłkę."
+   },
+   "category": {
+    "pl": "Wierność"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/deliverable-fidelity-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/deliverable-fidelity-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "ekstraktor-cytatow-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Ekstraktor cytatów"
+   },
+   "problem": {
+    "pl": "Zweryfikować cytat możesz dopiero, gdy go znajdziesz - a w 30-stronicowym piśmie łatwo jeden przeoczyć."
+   },
+   "description": {
+    "pl": "Mechanicznie wyłapuje wszystkie odwołania (sygnatury, ECLI, Dz.U./ELI, przepisy), normalizuje i rozwiązuje skróty (tamże, op. cit.) do antecedentu. Lista wprost do „Cytatów pod kontrolą\"."
+   },
+   "category": {
+    "pl": "Anti-halucynacja"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/ekstraktor-cytatow-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/ekstraktor-cytatow-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "eu-ai-act-triage-en",
+   "type": "skill",
+   "name": {
+    "en": "EU AI Act - fast triage",
+    "pt": "EU AI Act - fast triage"
+   },
+   "problem": {
+    "en": "Before paying for a full conformity audit, you need to know whether Regulation (EU) 2024/1689 even applies to your system - and how badly.",
+    "pt": "Antes de pagar por uma auditoria de conformidade completa, você precisa saber se o Regulamento (UE) 2024/1689 sequer se aplica ao seu sistema - e o quanto."
+   },
+   "description": {
+    "en": "An eight-question chain - AI-system definition, prohibited practices, high-risk classification, GPAI, transparency duties, operator role, obligation map with deadlines - in 20-40 minutes. Ends in a triage card for a human, not a conformity opinion.",
+    "pt": "Uma cadeia de oito perguntas - definição de sistema de IA, práticas proibidas, classificação de alto risco, GPAI, deveres de transparência, papel do operador, mapa de obrigações com prazos - em 20 a 40 minutos. Termina em uma ficha de triagem para um humano, não em um parecer de conformidade."
+   },
+   "category": {
+    "en": "AI Act",
+    "pt": "AI Act"
+   },
+   "jurisdiction": {
+    "en": "Governance",
+    "pt": "Governança"
+   },
+   "languages": [
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/eu-ai-act-triage-en.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/eu-ai-act-triage-en.zip",
+   "card_url": {
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-07-05",
+   "updated_at": "2026-07-05"
+  },
+  {
+   "id": "eu-sparql-search",
+   "type": "skill",
+   "name": {
+    "pl": "Prawo UE i TSUE",
+    "en": "EU law & CJEU",
+    "pt": "EU law & CJEU"
+   },
+   "problem": {
+    "pl": "Akty UE i orzecznictwo TSUE są rozsiane po EUR-Lex i repozytorium Cellar - ręczne, precyzyjne wyszukanie jest wolne.",
+    "en": "EU acts and CJEU rulings are scattered across EUR-Lex and the Cellar repository - finding the exact one by hand is slow.",
+    "pt": "Atos da UE e decisões do TJUE estão espalhados entre o EUR-Lex e o repositório Cellar - encontrar o exato manualmente é lento."
+   },
+   "description": {
+    "pl": "Odpytuje SPARQL Urzędu Publikacji UE po numerze CELEX, dacie czy temacie - akty i wyroki TSUE z identyfikatorem ELI i linkiem do źródła.",
+    "en": "Queries the EU Publications Office SPARQL endpoint by CELEX number, date or subject - EU legislation and CJEU rulings come back with an ELI identifier and a source link.",
+    "pt": "Consulta o endpoint SPARQL do Serviço de Publicações da UE por número CELEX, data ou assunto - legislação da UE e decisões do TJUE retornam com identificador ELI e link da fonte."
+   },
+   "category": {
+    "pl": "Research UE",
+    "en": "Research",
+    "pt": "Pesquisa"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/eu-sparql-search.zip"
+   },
+   "version": null,
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/eu-sparql-search.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille",
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "gdpr-breach-72h-en",
+   "type": "skill",
+   "name": {
+    "en": "Data breach 72h",
+    "pt": "Data breach 72h"
+   },
+   "problem": {
+    "en": "A breach, and the 72-hour clock is ticking - the deadline is easy to miscount.",
+    "pt": "Um incidente, e o relógio de 72 horas está correndo - o prazo é fácil de calcular errado."
+   },
+   "description": {
+    "en": "Art. 33-34 decision tree with a deterministic 72h calculator counted from awareness. Drafts the SA notification and the communication to data subjects.",
+    "pt": "Árvore de decisão dos Art. 33-34 com uma calculadora determinística de 72h contada a partir da ciência do incidente. Redige a notificação à autoridade e a comunicação aos titulares dos dados."
+   },
+   "category": {
+    "en": "Data protection",
+    "pt": "Proteção de dados"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/gdpr-breach-72h-en.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/gdpr-breach-72h-en.zip",
+   "card_url": {
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-06-30",
+   "updated_at": "2026-06-30"
+  },
+  {
+   "id": "gdpr-dpia-en",
+   "type": "skill",
+   "name": {
+    "en": "Impact assessment (DPIA)",
+    "pt": "Impact assessment (DPIA)"
+   },
+   "problem": {
+    "en": "You're deploying a system with personal data and don't know if it needs a DPIA - skipping one is a fine risk.",
+    "pt": "Você está implantando um sistema com dados pessoais e não sabe se precisa de uma DPIA - pular uma é um risco de multa."
+   },
+   "description": {
+    "en": "Runs the EDPB 9-criteria threshold test, the Art. 35(7) structure, and the Art. 36 prior-consultation decision. Grounded in the GDPR and EDPB guidelines.",
+    "pt": "Executa o teste de limiar de 9 critérios do EDPB, a estrutura do Art. 35(7), e a decisão de consulta prévia do Art. 36. Fundamentado no GDPR e nas diretrizes do EDPB."
+   },
+   "category": {
+    "en": "Data protection",
+    "pt": "Proteção de dados"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/gdpr-dpia-en.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/gdpr-dpia-en.zip",
+   "card_url": {
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-06-30",
+   "updated_at": "2026-06-30"
+  },
+  {
+   "id": "gdpr-dsar-en",
+   "type": "skill",
+   "name": {
+    "en": "Data subject rights (DSAR)",
+    "pt": "Data subject rights (DSAR)"
+   },
+   "problem": {
+    "en": "A request to access or erase data - you have one month and a few deadline traps.",
+    "pt": "Um pedido de acesso ou exclusão de dados - você tem um mês e algumas armadilhas de prazo."
+   },
+   "description": {
+    "en": "Classifies the right (Art. 15-22), computes the deadline (Art. 12(3) calculator), gates exemptions and refusals, drafts the response.",
+    "pt": "Classifica o direito (Art. 15-22), calcula o prazo (calculadora do Art. 12(3)), controla isenções e recusas, redige a resposta."
+   },
+   "category": {
+    "en": "Data protection",
+    "pt": "Proteção de dados"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/gdpr-dsar-en.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/gdpr-dsar-en.zip",
+   "card_url": {
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-06-30",
+   "updated_at": "2026-06-30"
+  },
+  {
+   "id": "gdpr-ropa-dpa-en",
+   "type": "skill",
+   "name": {
+    "en": "Records & processor (RoPA/DPA)",
+    "pt": "Records & processor (RoPA/DPA)"
+   },
+   "problem": {
+    "en": "Records of processing and processor contracts - a mandatory clause is easy to miss.",
+    "pt": "Registros de operações de tratamento e contratos com operadores - uma cláusula obrigatória é fácil de deixar passar."
+   },
+   "description": {
+    "en": "Builds the Art. 30 register and checks the processor contract against the Art. 28(3)(a)-(h) clauses, with a redline of what's missing.",
+    "pt": "Constrói o registro do Art. 30 e confere o contrato com o operador contra as cláusulas do Art. 28(3)(a)-(h), com um redline do que está faltando."
+   },
+   "category": {
+    "en": "Data protection",
+    "pt": "Proteção de dados"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/gdpr-ropa-dpa-en.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/gdpr-ropa-dpa-en.zip",
+   "card_url": {
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-06-30",
+   "updated_at": "2026-06-30"
+  },
+  {
+   "id": "hierarchia-zrodel-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Hierarchia źródeł"
+   },
+   "problem": {
+    "pl": "Model, który zaczyna od wniosku i dopiero potem dobiera przepis, robi to w złej kolejności."
+   },
+   "description": {
+    "pl": "Mapuje pytanie na warstwy źródeł prawa PL i UE (Konstytucja, prawo UE, ustawy, orzecznictwo, soft law), ustala kolejność weryfikacji i wskazuje konektor do każdej warstwy - zanim zacznie się research."
+   },
+   "category": {
+    "pl": "routing"
+   },
+   "jurisdiction": {
+    "pl": "Orzecznictwo"
+   },
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/hierarchia-zrodel-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/hierarchia-zrodel-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-07-05",
+   "updated_at": "2026-07-05"
+  },
+  {
+   "id": "humanizer-en",
+   "type": "skill",
+   "name": {
+    "en": "Humanizer",
+    "pt": "Humanizer"
+   },
+   "problem": {
+    "en": "Text from AI smells of AI: word inflation, em dashes, the rule of three, empty pathos.",
+    "pt": "Texto gerado por IA cheira a IA: inflação de palavras, travessões em excesso, a regra do três, pathos vazio."
+   },
+   "description": {
+    "en": "It removes the AI tells and leaves natural, precise language - built on Wikipedia's \"Signs of AI writing\". Keeps your meaning, cuts the filler.",
+    "pt": "Remove os sinais de IA e deixa uma linguagem natural e precisa - baseado no guia \"Signs of AI writing\" da Wikipédia. Mantém o seu sentido, corta o enchimento."
+   },
+   "category": {
+    "en": "Editing",
+    "pt": "Edição"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/humanizer-en.zip"
+   },
+   "version": null,
+   "license": "MIT",
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/humanizer-en.zip",
+   "card_url": {
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "humanizer-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Pisz po ludzku"
+   },
+   "problem": {
+    "pl": "Tekst z AI pachnie AI: inflacja słów, kalki, pusty patos."
+   },
+   "description": {
+    "pl": "Usuwa znamiona AI i zostawia naturalny, precyzyjny język. Zachowuje sens prawniczy, tnie pustosłowie."
+   },
+   "category": {
+    "pl": "Redakcja"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/humanizer-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/humanizer-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "intake-sufficiency-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Zlecenie pod lupą"
+   },
+   "problem": {
+    "pl": "Słaba opinia często nie bierze się z błędu analizy, tylko ze zbyt ogólnego zlecenia - klient pisze \"sprawdźcie tę umowę\" i nic więcej."
+   },
+   "description": {
+    "pl": "Ocenia, czy zlecenie ma dość kontekstu, by zacząć - cel, zakres, strony, fakty - i zamienia luki w konkretne pytania do klienta, zanim ruszysz z pracą."
+   },
+   "category": {
+    "pl": "Intake"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/intake-sufficiency-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/intake-sufficiency-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "judicial-first-impression-en",
+   "type": "skill",
+   "name": {
+    "en": "Judicial First Impression",
+    "pt": "Judicial First Impression"
+   },
+   "problem": {
+    "en": "You don't know how the text actually lands on a judge reading it cold, under time pressure, with no goodwill to fill the gaps.",
+    "pt": "Você não sabe como o texto realmente chega a um juiz que o lê a frio, sob pressão de tempo, sem boa vontade para preencher as lacunas."
+   },
+   "description": {
+    "en": "Simulates a sceptical first read and returns a seven-part reception report - what the case seems to be about, points of confusion, what's strong, what's weak, unproved assumptions, a calibrated confidence level, and what would be needed to persuade. It never rewrites or attacks - only reports how the text is received.",
+    "pt": "Simula uma primeira leitura cética e retorna um relatório de recepção em sete partes - do que o caso parece tratar, pontos de confusão, o que é forte, o que é fraco, premissas não comprovadas, um nível de confiança calibrado, e o que seria necessário para convencer. Nunca reescreve nem ataca - apenas relata como o texto é recebido."
+   },
+   "category": {
+    "en": "reader test",
+    "pt": "teste de leitor"
+   },
+   "jurisdiction": {
+    "en": "Verification",
+    "pt": "Verificação"
+   },
+   "languages": [
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/judicial-first-impression-en.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/judicial-first-impression-en.zip",
+   "card_url": {
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-07-05",
+   "updated_at": "2026-07-05"
+  },
+  {
+   "id": "klauzule-kontraktowe-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Klauzule pod lupą"
+   },
+   "problem": {
+    "pl": "Czytasz umowę i widzisz, co w niej jest - a najdroższe bywa to, czego w niej nie ma."
+   },
+   "description": {
+    "pl": "Przechodzi jedną umowę po 41 kategoriach klauzul (taksonomia CUAD, zlokalizowana do PL/UE) i oznacza każdą: jest, brak, ryzyko - z kotwicą do polskiego przepisu (KC, prawo autorskie, KP). Lista kontrolna, nie opinia."
+   },
+   "category": {
+    "pl": "Umowy"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/klauzule-kontraktowe-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/klauzule-kontraktowe-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "legal-ai-audit-bundle",
+   "type": "skill",
+   "name": {
+    "pl": "Paczka audytowa AI Act"
+   },
+   "problem": {
+    "pl": "Użyłeś AI do opinii, ale nie potrafisz odtworzyć, jak powstała - jaki model, jakie źródła, kto zatwierdził."
+   },
+   "description": {
+    "pl": "Składa gotowe pismo, ślad rozumowania, log kosztu i metadane w jeden folder z hashami SHA256 - dowód należytej staranności pod AI Act art. 12."
+   },
+   "category": {
+    "pl": "Zgodność / AI Act"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/legal-ai-audit-bundle.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/legal-ai-audit-bundle.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "legal-data-hunter-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Łowca źródeł"
+   },
+   "problem": {
+    "pl": "Materiał do sprawy leży w kilkunastu osobnych bazach - UODO, UOKiK, KNF, KIO, NSA, TK, SN, Sejm i dalsze - każda z własnym wyszukiwaniem."
+   },
+   "description": {
+    "pl": "Katalog i zbiorcze pobieranie z 11 polskich źródeł prawnych w jednym miejscu. Wiesz, gdzie czego szukać, i ściągasz hurtem zamiast klikać po portalach."
+   },
+   "category": {
+    "pl": "Research"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/legal-data-hunter-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/legal-data-hunter-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "legal-request-router-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Router zadań"
+   },
+   "problem": {
+    "pl": "Każde zapytanie traktowane tak samo - albo przepalasz czas na rutynowym streszczeniu, albo wysyłasz ważną opinię bez żadnej kontroli."
+   },
+   "description": {
+    "pl": "Na wejściu klasyfikuje zadanie i dobiera proporcjonalną ścieżkę: od szybkiej odpowiedzi po kontrolę cytatów, debatę i paczkę audytową. Sam nie pisze pisma - decyduje, co je sprawdzi."
+   },
+   "category": {
+    "pl": "Triage"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/legal-request-router-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/legal-request-router-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "legal-syllogism-en",
+   "type": "skill",
+   "name": {
+    "en": "Legal syllogism",
+    "pt": "Legal syllogism"
+   },
+   "problem": {
+    "en": "A flawed opinion rarely fails at the conclusion - it fails at the premise nobody stated.",
+    "pt": "Um parecer falho raramente falha na conclusão - falha na premissa que ninguém enunciou."
+   },
+   "description": {
+    "en": "Lays out the explicit syllogism - rule and its reading, material facts, application of facts to each element, conclusion - and flags the weak links to attack. Maps to civil-law subsumption and common-law IRAC.",
+    "pt": "Expõe o silogismo explícito - a regra e sua leitura, os fatos materiais, a aplicação dos fatos a cada elemento, a conclusão - e sinaliza os elos fracos a atacar. Corresponde à subsunção do civil law e ao IRAC do common law."
+   },
+   "category": {
+    "en": "Reasoning",
+    "pt": "Raciocínio"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/legal-syllogism-en.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/legal-syllogism-en.zip",
+   "card_url": {
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "let-it-be",
+   "type": "skill",
+   "name": {
+    "pl": "Let It Be"
+   },
+   "problem": {
+    "pl": "Dane osobowe (PESEL, nazwiska, firmy) nie powinny wyjść z kancelarii ani trafić do modelu."
+   },
+   "description": {
+    "pl": "Wykrywa i podmienia polskie dane osobowe lokalnie, deterministycznie. Pseudonimizacja odwracalna do pracy z AI albo trwała anonimizacja do publikacji."
+   },
+   "category": {
+    "pl": "RODO / bezpieczeństwo"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/let-it-be.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/let-it-be.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "marko-pl-content",
+   "type": "skill",
+   "name": {
+    "pl": "Recenzent"
+   },
+   "problem": {
+    "pl": "AI-tekst brzmi gładko, ale nie wiesz, czy obroni się merytorycznie."
+   },
+   "description": {
+    "pl": "Zrzędliwy senior reviewer wystawia werdykt i listę zarzutów ze wskazaniem miejsca w tekście. Nie chwali na wyrost."
+   },
+   "category": {
+    "pl": "Jakość treści"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/marko-pl-content.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/marko-pl-content.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "matematic-readiness-audit",
+   "type": "skill",
+   "name": {
+    "pl": "Audyt gotowości do AI"
+   },
+   "problem": {
+    "pl": "Kancelaria chce wejść w AI, ale nie wie, od czego zacząć ani na jakim jest etapie."
+   },
+   "description": {
+    "pl": "30 pytań w 5 wymiarach (RODO, tajemnica, AI Act, kompetencje, technika), scoring i miejsce na 5-poziomowej mapie, raport .docx z priorytetami na 90 dni. Narzędzie diagnostyczne - decyzja zostaje w kancelarii."
+   },
+   "category": {
+    "pl": "Strategia"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/matematic-readiness-audit.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/matematic-readiness-audit.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "nis2-compliance-triage-en",
+   "type": "skill",
+   "name": {
+    "en": "NIS2 compliance triage",
+    "pt": "NIS2 compliance triage"
+   },
+   "problem": {
+    "en": "NIS2 obligations only bite through national transposition, and member states implemented the directive differently and on different timelines - so \"are we in scope\" has no fixed answer.",
+    "pt": "As obrigações da NIS2 só se aplicam através da transposição nacional, e os Estados-membros implementaram a diretiva de formas e cronogramas diferentes - então \"estamos no escopo\" não tem resposta fixa."
+   },
+   "description": {
+    "en": "Checks the national transposition status first, then walks sector scope, the size-cap rule, essential-vs-important classification, the ten Art. 21(2) measures, and the 24h/72h/1-month incident clock. Runs the GDPR breach clock in parallel when personal data is involved.",
+    "pt": "Verifica primeiro o status da transposição nacional, depois percorre o escopo setorial, a regra do limite de porte, a classificação essencial-versus-importante, as dez medidas do Art. 21(2), e o relógio de incidentes de 24h/72h/1 mês. Roda o relógio de incidentes do GDPR em paralelo quando há dados pessoais envolvidos."
+   },
+   "category": {
+    "en": "NIS2",
+    "pt": "NIS2"
+   },
+   "jurisdiction": {
+    "en": "Cybersecurity",
+    "pt": "Cibersegurança"
+   },
+   "languages": [
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/nis2-compliance-triage-en.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/nis2-compliance-triage-en.zip",
+   "card_url": {
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-07-05",
+   "updated_at": "2026-07-05"
+  },
+  {
+   "id": "nis2-ksc-pl",
+   "type": "skill",
+   "name": {
+    "pl": "NIS2 / KSC - triage"
+   },
+   "problem": {
+    "pl": "Firma \"czuje\", że podlega NIS2 - albo że nie podlega - i od razu zamawia audyt bez sprawdzenia zakresu."
+   },
+   "description": {
+    "pl": "Nawiguje zakres (sektory, size-cap), kategorię podmiotu (kluczowy/ważny), mapę 10 środków z art. 21 i zegar zgłoszenia incydentu 24h/72h/miesiąc. Najpierw sprawdza stan transpozycji ustawy o KSC."
+   },
+   "category": {
+    "pl": "NIS2"
+   },
+   "jurisdiction": {
+    "pl": "Cyberbezpieczeństwo"
+   },
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/nis2-ksc-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/nis2-ksc-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-07-05",
+   "updated_at": "2026-07-05"
+  },
+  {
+   "id": "ocena-outputu-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Ocena outputu"
+   },
+   "problem": {
+    "pl": "\"Brzmi dobrze\" to nie to samo co \"cytaty się zgadzają\" - a wysyłasz jedno, ryzykując drugie."
+   },
+   "description": {
+    "pl": "Ocenia gotowy output w dwóch warstwach: obiektywnej (cytaty, przepisy, sygnatury - sprawdzalne) i subiektywnej (rubryka 1-5: poprawność, kompletność, jasność, jurysdykcja, ugruntowanie). Zwraca decyzję: wyślij, popraw albo pełna weryfikacja."
+   },
+   "category": {
+    "pl": "Weryfikacja"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/ocena-outputu-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/ocena-outputu-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "opposing-counsel-attack-en",
+   "type": "skill",
+   "name": {
+    "en": "Opposing Counsel Attack",
+    "pt": "Opposing Counsel Attack"
+   },
+   "problem": {
+    "en": "A high-stakes submission goes out and you don't know where the other side will strike first.",
+    "pt": "Uma petição de alto risco é enviada e você não sabe onde a outra parte vai atacar primeiro."
+   },
+   "description": {
+    "en": "A single-pass attack from the perspective of opposing counsel: core theory of attack, the argument stripped of rhetoric, primary lines of attack, a sceptical judge's view, surgical strikes, and what the submission is trying to hide. Cheaper than the full debate - a first filter before escalating.",
+    "pt": "Um ataque de passagem única sob a perspectiva da parte contrária: teoria central do ataque, o argumento despido de retórica, principais linhas de ataque, visão de um juiz cético, ataques cirúrgicos, e o que a petição está tentando esconder. Mais barato que o debate completo - um primeiro filtro antes de escalar."
+   },
+   "category": {
+    "en": "fast",
+    "pt": "rápida"
+   },
+   "jurisdiction": {
+    "en": "Verification",
+    "pt": "Verificação"
+   },
+   "languages": [
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/opposing-counsel-attack-en.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/opposing-counsel-attack-en.zip",
+   "card_url": {
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-07-05",
+   "updated_at": "2026-07-05"
+  },
+  {
+   "id": "output-scoring-en",
+   "type": "skill",
+   "name": {
+    "en": "Output scoring",
+    "pt": "Output scoring"
+   },
+   "problem": {
+    "en": "\"Sounds right\" is not \"the citations check out\" - and you risk sending one for the other.",
+    "pt": "\"Parece certo\" não é o mesmo que \"as citações conferem\" - e você corre o risco de enviar uma coisa por outra."
+   },
+   "description": {
+    "en": "Scores a finished output in two layers: objective (citations, provisions, dockets - checkable) and subjective (1-5 rubric: correctness, completeness, clarity, jurisdiction, grounding). Returns a decision: send, revise, or full verification.",
+    "pt": "Pontua um output finalizado em duas camadas: objetiva (citações, dispositivos, processos - verificáveis) e subjetiva (rubrica de 1 a 5: correção, completude, clareza, jurisdição, fundamentação). Retorna uma decisão: enviar, revisar ou verificação completa."
+   },
+   "category": {
+    "en": "Verification",
+    "pt": "Verificação"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/output-scoring-en.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/output-scoring-en.zip",
+   "card_url": {
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "pierwsze-wrazenie-sedziego-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Pierwsze wrażenie sędziego"
+   },
+   "problem": {
+    "pl": "Autor zna sprawę od miesięcy - sędzia czyta pismo raz, na zimno, z referatem kilkuset spraw."
+   },
+   "description": {
+    "pl": "Symuluje pierwszą, sceptyczną lekturę: co brzmi mocno, co nie przekonuje, co jest założone bez dowodu i jaki jest wstępny poziom przekonania. Nie poprawia pisma - mówi, jak ono ląduje."
+   },
+   "category": {
+    "pl": "test czytelnika"
+   },
+   "jurisdiction": {
+    "pl": "Weryfikacja"
+   },
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/pierwsze-wrazenie-sedziego-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/pierwsze-wrazenie-sedziego-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-07-05",
+   "updated_at": "2026-07-05"
+  },
+  {
+   "id": "privilege-preflight-en",
+   "type": "skill",
+   "name": {
+    "en": "Privilege Preflight",
+    "pt": "Privilege Preflight"
+   },
+   "problem": {
+    "en": "Pasting case content into a cloud chatbot is a disclosure - not \"tool usage\" - and most people paste first and think later.",
+    "pt": "Colar conteúdo de um caso em um chatbot na nuvem é uma divulgação - não \"uso de ferramenta\" - e a maioria das pessoas cola primeiro e pensa depois."
+   },
+   "description": {
+    "en": "Scores five risk factors (client identifiability, professional secrecy, litigation strategy, third-party data, provider terms) and returns a banded verdict - SAFE, CAUTION or STOP. On CAUTION it prepares a redacted draft for human approval; it never sends anything itself.",
+    "pt": "Pontua cinco fatores de risco (identificabilidade do cliente, sigilo profissional, estratégia de litígio, dados de terceiros, termos do provedor) e retorna um veredito em faixas - SAFE, CAUTION ou STOP. No caso CAUTION, prepara um rascunho redigido para aprovação humana; nunca envia nada sozinho."
+   },
+   "category": {
+    "en": "preflight",
+    "pt": "preflight"
+   },
+   "jurisdiction": {
+    "en": "Governance",
+    "pt": "Governança"
+   },
+   "languages": [
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/privilege-preflight-en.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/privilege-preflight-en.zip",
+   "card_url": {
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-07-05",
+   "updated_at": "2026-07-05"
+  },
+  {
+   "id": "redline-docx-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Redline w Wordzie"
+   },
+   "problem": {
+    "pl": "Nanoszenie poprawek w .docx psuje formatowanie, a wysłane pismo niesie metadane autora - kto i kiedy je pisał."
+   },
+   "description": {
+    "pl": "Wstawia natywne Word Track Changes bez niszczenia układu i czyści metadane przed wysyłką (RODO). Cała praca lokalnie."
+   },
+   "category": {
+    "pl": "Umowy"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/redline-docx-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/redline-docx-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "reviewer-en",
+   "type": "skill",
+   "name": {
+    "en": "Reviewer",
+    "pt": "Reviewer"
+   },
+   "problem": {
+    "en": "You've written a long, source-heavy English article that reads smoothly - and you still can't tell if it holds up.",
+    "pt": "Você escreveu um artigo longo, rico em fontes, que flui bem - e ainda assim não sabe se ele se sustenta."
+   },
+   "description": {
+    "en": "A grumpy senior editor delivers a verdict and a list of charges, pointing to the spot in the text. It never suggests fixes and never praises for the sake of it.",
+    "pt": "Um editor sênior rabugento entrega um veredito e uma lista de acusações, apontando o trecho exato do texto. Nunca sugere correções e nunca elogia por elogiar."
+   },
+   "category": {
+    "en": "Content quality",
+    "pt": "Qualidade de conteúdo"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/reviewer-en.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/reviewer-en.zip",
+   "card_url": {
+    "en": "https://matematicsolutions.com/en/boutique/skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "risk-and-issues-manager-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Rejestr ryzyk RAID"
+   },
+   "problem": {
+    "pl": "Termin procesowy, konflikt interesów, incydent RODO - ryzyka sprawy żyją w głowie, dopóki któreś nie wybuchnie."
+   },
+   "description": {
+    "pl": "Prowadzi rejestr RAID (ryzyka, założenia, problemy, decyzje) w .xlsx i przy ryzyku poziomu Czerwony szykuje draft eskalacji do wspólnika. Polskie realia: terminy, zażalenia, art. 16 KEA."
+   },
+   "category": {
+    "pl": "Zarządzanie sprawami"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/risk-and-issues-manager-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/risk-and-issues-manager-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "rodo-dpia-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Ocena skutków (DPIA)"
+   },
+   "problem": {
+    "pl": "Wdrażasz system z danymi i nie wiesz, czy wymaga oceny skutków - a pominięcie to ryzyko kary."
+   },
+   "description": {
+    "pl": "Przeprowadza test 9 kryteriów EROD i strukturę DPIA wg art. 35 ust. 7; wskazuje, czy potrzebne są uprzednie konsultacje z UODO (art. 36)."
+   },
+   "category": {
+    "pl": "Ochrona danych"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/rodo-dpia-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/rodo-dpia-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-30",
+   "updated_at": "2026-06-30"
+  },
+  {
+   "id": "rodo-dsar-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Żądania osób (DSAR)"
+   },
+   "problem": {
+    "pl": "Klient żąda dostępu albo usunięcia danych - masz miesiąc i kilka pułapek terminu."
+   },
+   "description": {
+    "pl": "Klasyfikuje prawo (art. 15-22), liczy termin kalkulatorem (art. 12 ust. 3), bramkuje wyjątki i odmowy, składa draft odpowiedzi."
+   },
+   "category": {
+    "pl": "Ochrona danych"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/rodo-dsar-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/rodo-dsar-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-30",
+   "updated_at": "2026-06-30"
+  },
+  {
+   "id": "rodo-naruszenie-72h-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Naruszenie danych 72h"
+   },
+   "problem": {
+    "pl": "Wyciek danych, a zegar 72 godzin tyka - termin łatwo policzyć błędnie."
+   },
+   "description": {
+    "pl": "Drzewo decyzyjne art. 33-34 z deterministycznym kalkulatorem terminu 72h od stwierdzenia. Składa draft zgłoszenia do UODO i zawiadomienia osób."
+   },
+   "category": {
+    "pl": "Ochrona danych"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/rodo-naruszenie-72h-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/rodo-naruszenie-72h-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-30",
+   "updated_at": "2026-06-30"
+  },
+  {
+   "id": "rodo-ropa-dpa-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Rejestr i powierzenie (RoPA/DPA)"
+   },
+   "problem": {
+    "pl": "Rejestr czynności i umowy powierzenia - łatwo pominąć obowiązkową klauzulę."
+   },
+   "description": {
+    "pl": "Buduje rejestr art. 30 i sprawdza umowę powierzenia pod kątem klauzul art. 28 ust. 3 lit. a-h, z redline braków."
+   },
+   "category": {
+    "pl": "Ochrona danych"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/rodo-ropa-dpa-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/rodo-ropa-dpa-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-30",
+   "updated_at": "2026-06-30"
+  },
+  {
+   "id": "scope-change-controller-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Kontrola zakresu"
+   },
+   "problem": {
+    "pl": "Klient prosi o \"jeszcze jedną rzecz\" - i nie wiesz, czy to mieści się w ofercie, czy to już osobna praca do rozliczenia."
+   },
+   "description": {
+    "pl": "Czyta ofertę i wątek z klientem, klasyfikuje zadanie (w zakresie, poza zakresem, niejasne) i składa albo wniosek o rozszerzenie do klienta, albo notatkę wewnętrzną dla wspólnika."
+   },
+   "category": {
+    "pl": "Zarządzanie sprawami"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/scope-change-controller-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/scope-change-controller-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "status-report-drafter-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Status sprawy"
+   },
+   "problem": {
+    "pl": "Wspólnik pyta o status sprawy, a Ty sklejasz go z maili, notatek i pamięci - co tydzień od nowa."
+   },
+   "description": {
+    "pl": "Z wątku mailowego składa gotowy do wysłania .docx: ocena RAG, postęp z datami, luki, akcje z terminami, eskalacje. Polskie realia billingu (godziny, ryczałt, success fee)."
+   },
+   "category": {
+    "pl": "Zarządzanie sprawami"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/status-report-drafter-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/status-report-drafter-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "struktura-wyroku-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Struktura wyroku"
+   },
+   "problem": {
+    "pl": "Uzasadnienie ma 40 stron, a Ty potrzebujesz wiedzieć: co sąd orzekł, dlaczego i jaka jest teza."
+   },
+   "description": {
+    "pl": "Rozkłada orzeczenie na role (stan faktyczny, zarzuty, podstawa prawna, rozważania, sentencja, teza) i streszcza ekstraktywnie - cytuje zdania sądu, nie parafrazuje. Powołane przepisy wprost do weryfikacji."
+   },
+   "category": {
+    "pl": "Research"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/struktura-wyroku-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/struktura-wyroku-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "subsumpcja-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Subsumpcja"
+   },
+   "problem": {
+    "pl": "Błąd w opinii rzadko siedzi we wniosku - siedzi w przemilczanej przesłance."
+   },
+   "description": {
+    "pl": "Rozpisuje rozumowanie na jawny sylogizm: norma i jej wykładnia, fakty istotne, podciągnięcie faktów pod znamiona, wniosek - i wskazuje słabe ogniwa do ataku. Każdy krok wypowiedziany i sprawdzalny."
+   },
+   "category": {
+    "pl": "Argumentacja"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/subsumpcja-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/subsumpcja-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "szukaj-orzeczen-v2",
+   "type": "skill",
+   "name": {
+    "pl": "Szukaj orzeczeń"
+   },
+   "problem": {
+    "pl": "Szukanie orzecznictwa po portalach to przeklejanie i gubienie sygnatur."
+   },
+   "description": {
+    "pl": "Przeszukuje bazę SAOS, pobiera pełne treści orzeczeń i składa raport tematyczny w DOCX. Sygnatury i hasła pod ręką."
+   },
+   "category": {
+    "pl": "Research"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/szukaj-orzeczen-v2.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/szukaj-orzeczen-v2.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "tajemnica-preflight-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Tajemnica preflight"
+   },
+   "problem": {
+    "pl": "Wklejenie fragmentu sprawy do darmowego czata to ujawnienie, nie \"użycie narzędzia\" - a ręka już jest nad Enterem."
+   },
+   "description": {
+    "pl": "Ocenia pięć czynników ryzyka (klient, tajemnica, strategia procesowa, dane osób trzecich, warunki dostawcy) i wydaje werdykt SAFE/CAUTION/STOP, przy CAUTION przygotowując zredagowany draft do zatwierdzenia."
+   },
+   "category": {
+    "pl": "preflight"
+   },
+   "jurisdiction": {
+    "pl": "Governance"
+   },
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/tajemnica-preflight-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/tajemnica-preflight-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-07-05",
+   "updated_at": "2026-07-05"
+  },
+  {
+   "id": "terminy-procesowe-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Terminy procesowe"
+   },
+   "problem": {
+    "pl": "Termin procesowy to najwyższa stawka operacyjna kancelarii - apelacja dzień po terminie jest odrzucana bez badania racji."
+   },
+   "description": {
+    "pl": "Nigdy sama data: klasyfikuje termin, wylicza go krok po kroku wg reguł KC z podstawą prawną przy każdym kroku, sprawdza dni wolne i pułapki (ogłoszenie vs doręczenie, tydzień vs 7 dni)."
+   },
+   "category": {
+    "pl": "terminy"
+   },
+   "jurisdiction": {
+    "pl": "Dokumenty"
+   },
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/terminy-procesowe-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/terminy-procesowe-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-07-05",
+   "updated_at": "2026-07-05"
+  },
+  {
+   "id": "webwright-legal-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Orzeczenia spoza MCP"
+   },
+   "problem": {
+    "pl": "Potrzebujesz wyroku z ms.gov.pl, sn.pl albo TK, a tych baz konektor MCP nie widzi."
+   },
+   "description": {
+    "pl": "Pobiera orzeczenia po sygnaturze z serwisów sądowych niedostępnych przez MCP (orzeczenia.ms.gov.pl, sn.pl, trybunal.gov.pl) przez Playwright - tam, gdzie SAOS nie sięga."
+   },
+   "category": {
+    "pl": "Research"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/webwright-legal-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/webwright-legal-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-06-25",
+   "updated_at": "2026-06-25"
+  }
+ ]
+}

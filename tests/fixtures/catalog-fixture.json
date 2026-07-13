@@ -1,0 +1,171 @@
+{
+ "$schema": "https://matematicsolutions.com/catalog.schema.json",
+ "schema_version": "1.0",
+ "generated_at": "2026-07-13",
+ "source": "https://matematicsolutions.com/boutique",
+ "counts": {
+  "konektor": 2,
+  "skill": 1,
+  "kuratorski": 1,
+  "total": 4
+ },
+ "entries": [
+  {
+   "id": "mcp-saos",
+   "type": "konektor",
+   "name": {
+    "pl": "SAOS",
+    "en": "SAOS (Poland)",
+    "pt": "SAOS (Polonia)"
+   },
+   "problem": {
+    "pl": "Orzecznictwo rozsiane po portalach."
+   },
+   "description": {
+    "pl": "Konektor do API SAOS: 537 tys. orzeczen z sygnatura i linkiem do zrodla.",
+    "en": "Connector to the SAOS API: 537k Polish court decisions with citation and source link."
+   },
+   "category": {
+    "pl": "orzecznictwo",
+    "en": "case law"
+   },
+   "jurisdiction": {
+    "pl": "Polska",
+    "en": "Poland",
+    "pt": "Polonia"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "npx",
+    "command": "npx -y @matematicsolutions/mcp-saos"
+   },
+   "version": "1.2.0",
+   "license": "MIT",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/mcp-saos",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-mcp-saos"
+   },
+   "added_at": "2026-05-02",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "de-eli-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Niemcy / ELI",
+    "en": "Germany / ELI"
+   },
+   "problem": {
+    "en": "German federal law lives in scattered portals."
+   },
+   "description": {
+    "pl": "Konektor do niemieckiego prawa federalnego.",
+    "en": "Connector for German federal legislation with ELI identifiers."
+   },
+   "category": {
+    "pl": "ustawodawstwo",
+    "en": "legislation"
+   },
+   "jurisdiction": {
+    "pl": "Niemcy",
+    "en": "Germany",
+    "pt": "Alemanha"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx de-eli-mcp"
+   },
+   "version": "0.3.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/de-eli-mcp",
+   "card_url": {
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-de-eli-mcp"
+   },
+   "added_at": "2026-06-20",
+   "updated_at": "2026-06-25"
+  },
+  {
+   "id": "humanizer-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Pisz po ludzku"
+   },
+   "problem": {
+    "pl": "Tekst z AI pachnie AI."
+   },
+   "description": {
+    "pl": "Usuwa znamiona AI i zostawia naturalny, precyzyjny jezyk."
+   },
+   "category": {
+    "pl": "redakcja"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/humanizer-pl.zip"
+   },
+   "version": null,
+   "license": "MIT",
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/humanizer-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-05-10",
+   "updated_at": "2026-05-10"
+  },
+  {
+   "id": "morellid/ai-act-skill",
+   "type": "kuratorski",
+   "name": {
+    "pl": "AI Act dla inzynierow",
+    "en": "AI Act for engineers"
+   },
+   "problem": {
+    "pl": "Zespol nie wie, czy jego system podlega AI Act."
+   },
+   "description": {
+    "pl": "Klasyfikuje system AI pod AI Act, mapuje obowiazki, generuje FRIA."
+   },
+   "category": {
+    "pl": "AI Act",
+    "en": "AI Act"
+   },
+   "jurisdiction": {
+    "pl": "EU",
+    "en": "EU"
+   },
+   "languages": [
+    "pl",
+    "en"
+   ],
+   "install": {
+    "kind": "github",
+    "url": "https://github.com/morellid/ai-act-skill"
+   },
+   "version": null,
+   "license": "MIT",
+   "author": "morellid",
+   "source_url": "https://github.com/morellid/ai-act-skill",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille"
+   },
+   "added_at": "2026-07-01",
+   "updated_at": "2026-07-01"
+  }
+ ]
+}
