@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "boutique-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "Local MCP catalog of MateMatic Boutique: find the right legal-data connector or skill and get a local install command. No proxy, no query logging."
 readme = "README.md"
 license = { text = "Apache-2.0" }
