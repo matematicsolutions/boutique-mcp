@@ -45,7 +45,11 @@ def test_instructions_only_reference_registered_tools():
 
 def test_all_registered_tools_mentioned_in_instructions():
     registered = _registered_tool_names()
-    missing = {t for t in registered if f"`{t}`" not in INSTRUCTIONS}
+    # a tool may be named bare (`tool`) or with a call example (`tool(arg=...)`) - both route the model
+    missing = {
+        t for t in registered
+        if f"`{t}`" not in INSTRUCTIONS and f"`{t}(" not in INSTRUCTIONS
+    }
     assert not missing, f"Registered tools absent from INSTRUCTIONS: {missing}"
 
 

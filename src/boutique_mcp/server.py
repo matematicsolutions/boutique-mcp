@@ -277,7 +277,11 @@ async def boutique_coverage() -> Coverage:
     Returns:
         ``Coverage`` with families, an as-of note, and a non-empty list of known gaps.
     """
-    return build_coverage()
+    audit = AuditLogger()
+    with timer() as t:
+        coverage = build_coverage()
+    audit.log(tool="boutique_coverage", duration_ms=t.duration_ms, status="ok")
+    return coverage
 
 
 def main() -> None:
