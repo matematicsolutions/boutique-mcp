@@ -37,6 +37,7 @@ This MCP server is a LOCAL catalog of MateMatic Boutique: legal-data MCP connect
 
 ## Hard constraints
 
+- **Do not answer past the edge of this corpus** - when a search comes back empty, or the question touches material this connector does not carry, call `boutique_coverage` and relay what it says is missing. Absence here is not absence in the law.
 - **Local install only** - relay the install command for the USER to run; never claim this server executed or installed anything.
 - **Draft only** - `boutique_request_coverage` never submits the request. Tell the user explicitly that the draft still has to be submitted by a human.
 - **Provenance stamp** - every response carries `provenance` (network / disk-cache / bundled-snapshot + catalog date). When `stale` is true, tell the user the catalog may be out of date and where the live one lives.
