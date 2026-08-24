@@ -23,6 +23,7 @@ from .audit import AuditLogger, timer
 from .catalog import CatalogUnavailableError, get_store
 from .models import CoverageDraft, SearchResult, WhatsNewResult
 from .search import closest_ids, search, to_hit
+from .coverage import Coverage, build_coverage
 
 INSTRUCTIONS = """\
 This MCP server is a LOCAL catalog of MateMatic Boutique: legal-data MCP connectors (SAOS, CBOSA, EUR-Lex, national ELI servers for 30+ jurisdictions...), agent skills and curated third-party skills. It answers one question: which building block solves the task at hand, and how to install it LOCALLY. It installs nothing, proxies nothing and never sends query content anywhere - the catalog file is fetched from matematicsolutions.com with an ETag, cached on disk and bundled as an offline snapshot, so the server works without network access.
@@ -262,6 +263,20 @@ async def boutique_request_coverage(
             raise
     audit.log(tool="boutique_request_coverage", duration_ms=t.duration_ms, status="ok")
     return result
+
+
+@mcp.tool(annotations=READ_ONLY)
+async def boutique_coverage() -> Coverage:
+    """Declare what this connector covers, how it is sourced, and what it does NOT cover.
+
+    Call this before telling a user that the law "does not contain" something, and whenever
+    a search comes back empty: the absence may be a gap in this connector rather than in the
+    law. Every gap carries a fallback saying where to look instead.
+
+    Returns:
+        ``Coverage`` with families, an as-of note, and a non-empty list of known gaps.
+    """
+    return build_coverage()
 
 
 def main() -> None:

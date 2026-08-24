@@ -38,6 +38,9 @@ returns commands; you run them.
   every available language, install, version, license, source and card URLs.
 - **`boutique_whats_new(since_date?)`** - what was added or updated since a date
   (default: the 30 days before the catalog was generated).
+- **`boutique_coverage()`** - declares what this catalogue covers, where it comes
+  from and what it does NOT cover. Every gap carries a stable id and a fallback.
+  Call it when a search returns nothing: the absence may be a gap in the catalogue.
 - **`boutique_request_coverage(description, jurisdiction?)`** - drafts a
   coverage-request issue for a gap. **Draft only**: nothing is sent anywhere;
   a human reviews and submits it.
