@@ -3,9 +3,9 @@
 <!-- mcp-name: io.github.matematicsolutions/boutique-mcp -->
 
 A **local MCP catalog** of [MateMatic Boutique](https://matematicsolutions.com/en/boutique):
-103 entries at the time of writing - 43 legal-data MCP connectors (SAOS, CBOSA,
-EUR-Lex, national ELI servers from Austria to Japan), 52 MateMatic agent skills
-and 8 curated third-party skills.
+legal-data MCP connectors (SAOS, CBOSA, EUR-Lex, national ELI servers from Austria
+to Japan), MateMatic agent skills and curated third-party skills. Current counts
+live in the catalogue itself (`counts` in `catalog.json`), not in this file.
 
 It answers one question: which building block solves the task at hand, and how
 to install it locally. The catalog points, it never proxies. Your agent gets a
