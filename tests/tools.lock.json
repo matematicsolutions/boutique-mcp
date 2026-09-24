@@ -1,0 +1,867 @@
+{
+  "package_version": "0.2.2",
+  "tools": {
+    "boutique_coverage": {
+      "descriptor": {
+        "annotations": {
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true,
+          "readOnlyHint": true
+        },
+        "description": "Declare what this connector covers, how it is sourced, and what it does NOT cover.\n\nCall this before telling a user that the law \"does not contain\" something, and whenever\na search comes back empty: the absence may be a gap in this connector rather than in the\nlaw. Every gap carries a fallback saying where to look instead.\n\nReturns:\n    ``Coverage`` with families, an as-of note, and a non-empty list of known gaps.",
+        "inputSchema": {
+          "additionalProperties": false,
+          "properties": {},
+          "type": "object"
+        },
+        "meta": {
+          "fastmcp": {
+            "tags": []
+          }
+        },
+        "name": "boutique_coverage",
+        "outputSchema": {
+          "additionalProperties": true,
+          "description": "What this connector covers, how it is sourced, and what it does not cover.",
+          "properties": {
+            "as_of_note": {
+              "description": "States what the dates mean, and what they do not promise.",
+              "type": "string"
+            },
+            "families": {
+              "items": {
+                "additionalProperties": true,
+                "description": "One data family this connector exposes.",
+                "properties": {
+                  "captured_at": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "description": "Date this family was last captured (ISO). None when queried live."
+                  },
+                  "live": {
+                    "default": true,
+                    "description": "True when queried live instead of from a snapshot.",
+                    "type": "boolean"
+                  },
+                  "name": {
+                    "description": "Data family, e.g. 'Federal legislation'.",
+                    "type": "string"
+                  },
+                  "source": {
+                    "description": "Official source the data comes from.",
+                    "type": "string"
+                  },
+                  "tool": {
+                    "description": "Tool or tools that reach this family.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "tool",
+                  "source"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "known_gaps": {
+              "description": "Never empty. An empty list would mean 'not checked', not 'no gaps'.",
+              "items": {
+                "additionalProperties": true,
+                "description": "A known, named hole in this connector's coverage - plus the way around it.",
+                "properties": {
+                  "fallback": {
+                    "description": "Where to go instead.",
+                    "type": "string"
+                  },
+                  "family": {
+                    "description": "Which family the gap belongs to.",
+                    "type": "string"
+                  },
+                  "id": {
+                    "description": "Stable gap identifier.",
+                    "type": "string"
+                  },
+                  "missing": {
+                    "description": "What is NOT available through this connector.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "family",
+                  "missing",
+                  "fallback"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "status": {
+              "default": "ok",
+              "enum": [
+                "ok",
+                "degraded",
+                "failed"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "as_of_note"
+          ],
+          "type": "object"
+        }
+      },
+      "sha256": "77a4f7e81c78766c0a297616fe9c4d2c79c816fac12253ca6d6d7e48ff4aa835"
+    },
+    "boutique_get": {
+      "descriptor": {
+        "annotations": {
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true,
+          "readOnlyHint": true
+        },
+        "description": "Full catalog card for one entry: names, descriptions and card URLs in\nevery available language, install command, version, license, source URL.",
+        "inputSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "description": "the entry id from boutique_search (e.g. \"mcp-saos\", \"de-eli-mcp\",\n\"humanizer-pl\").",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "type": "object"
+        },
+        "meta": {
+          "fastmcp": {
+            "tags": []
+          }
+        },
+        "name": "boutique_get",
+        "outputSchema": {
+          "additionalProperties": true,
+          "type": "object"
+        }
+      },
+      "sha256": "bf8aa428e2d6aa0cc3e5beca30b0fe713dd0af55595477d78a1bc1511a61d2ad"
+    },
+    "boutique_request_coverage": {
+      "descriptor": {
+        "annotations": {
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": false,
+          "readOnlyHint": true
+        },
+        "description": "Draft a coverage-request issue for a gap in the Boutique catalog.\n\nDRAFT ONLY - this tool performs no network call and submits nothing.\nA human reviews the draft and submits it at the returned URL.",
+        "inputSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "description": {
+              "description": "what is missing and for what task (plain language).",
+              "type": "string"
+            },
+            "jurisdiction": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "optional jurisdiction the gap concerns."
+            }
+          },
+          "required": [
+            "description"
+          ],
+          "type": "object"
+        },
+        "meta": {
+          "fastmcp": {
+            "tags": []
+          }
+        },
+        "name": "boutique_request_coverage",
+        "outputSchema": {
+          "description": "A DRAFT coverage request. Nothing is sent anywhere - a human submits it.",
+          "properties": {
+            "body": {
+              "type": "string"
+            },
+            "disclaimer": {
+              "type": "string"
+            },
+            "submit_url": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "title",
+            "body",
+            "submit_url",
+            "disclaimer"
+          ],
+          "type": "object"
+        }
+      },
+      "sha256": "8eec94befb7bae8e6cce0af97289ce9a5169780692d05f50cb5669f63149d4f7"
+    },
+    "boutique_search": {
+      "descriptor": {
+        "annotations": {
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true,
+          "readOnlyHint": true
+        },
+        "description": "Search the MateMatic Boutique catalog for connectors and skills.",
+        "inputSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "entry_type": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "optional filter: \"konektor\" (MCP connector), \"skill\"\n(MateMatic skill) or \"kuratorski\" (curated third-party skill)."
+            },
+            "jurisdiction": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "optional filter, matched against the entry's jurisdiction\nlabel (e.g. \"Polska\", \"EU\", \"Brasil\")."
+            },
+            "limit": {
+              "default": 10,
+              "description": "max hits (1-25, default 10).",
+              "type": "integer"
+            },
+            "query": {
+              "description": "keywords in English, Polish or Portuguese (e.g. \"case law Poland\",\n\"anonimizacja\", \"German law\").",
+              "type": "string"
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "type": "object"
+        },
+        "meta": {
+          "fastmcp": {
+            "tags": []
+          }
+        },
+        "name": "boutique_search",
+        "outputSchema": {
+          "properties": {
+            "gaps": {
+              "items": {
+                "description": "Explicit statement of what the catalog does NOT cover for this query.",
+                "properties": {
+                  "detail": {
+                    "type": "string"
+                  },
+                  "kind": {
+                    "enum": [
+                      "no_match",
+                      "jurisdiction_uncovered",
+                      "type_uncovered"
+                    ],
+                    "type": "string"
+                  },
+                  "suggestion": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "kind",
+                  "detail",
+                  "suggestion"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "hits": {
+              "items": {
+                "properties": {
+                  "card_url": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "category": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "description": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "id": {
+                    "type": "string"
+                  },
+                  "install": {
+                    "additionalProperties": true,
+                    "description": "How to install a catalog entry LOCALLY. The catalog never proxies anything.",
+                    "properties": {
+                      "command": {
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "description": "Copy-paste local install command"
+                      },
+                      "kind": {
+                        "description": "uvx | npx | download | github",
+                        "type": "string"
+                      },
+                      "url": {
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "description": "Download or repository URL"
+                      }
+                    },
+                    "required": [
+                      "kind"
+                    ],
+                    "type": "object"
+                  },
+                  "jurisdiction": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "license": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "score": {
+                    "type": "number"
+                  },
+                  "type": {
+                    "enum": [
+                      "konektor",
+                      "skill",
+                      "kuratorski"
+                    ],
+                    "type": "string"
+                  },
+                  "version": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  }
+                },
+                "required": [
+                  "id",
+                  "type",
+                  "name",
+                  "install",
+                  "score"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "provenance": {
+              "description": "Where the catalog data in this response came from, and how old it is.",
+              "properties": {
+                "catalog_generated_at": {
+                  "type": "string"
+                },
+                "fetched_at": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "default": null
+                },
+                "note": {
+                  "type": "string"
+                },
+                "origin": {
+                  "enum": [
+                    "network",
+                    "disk-cache",
+                    "bundled-snapshot"
+                  ],
+                  "type": "string"
+                },
+                "stale": {
+                  "default": false,
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "origin",
+                "catalog_generated_at",
+                "note"
+              ],
+              "type": "object"
+            },
+            "query": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "query",
+            "provenance"
+          ],
+          "type": "object"
+        }
+      },
+      "sha256": "0340f60b302d1b8ef2bab76d74f38610c4ba84b7f12ed0fa7097cea94aa126a6"
+    },
+    "boutique_whats_new": {
+      "descriptor": {
+        "annotations": {
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true,
+          "readOnlyHint": true
+        },
+        "description": "What was added to or updated in the Boutique catalog since a date.",
+        "inputSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "since_date": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "ISO date (YYYY-MM-DD). Default: 30 days before the catalog's\ngenerated_at date (deterministic offline - no system clock involved)."
+            }
+          },
+          "type": "object"
+        },
+        "meta": {
+          "fastmcp": {
+            "tags": []
+          }
+        },
+        "name": "boutique_whats_new",
+        "outputSchema": {
+          "properties": {
+            "added": {
+              "items": {
+                "properties": {
+                  "card_url": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "category": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "description": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "id": {
+                    "type": "string"
+                  },
+                  "install": {
+                    "additionalProperties": true,
+                    "description": "How to install a catalog entry LOCALLY. The catalog never proxies anything.",
+                    "properties": {
+                      "command": {
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "description": "Copy-paste local install command"
+                      },
+                      "kind": {
+                        "description": "uvx | npx | download | github",
+                        "type": "string"
+                      },
+                      "url": {
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "description": "Download or repository URL"
+                      }
+                    },
+                    "required": [
+                      "kind"
+                    ],
+                    "type": "object"
+                  },
+                  "jurisdiction": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "license": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "score": {
+                    "type": "number"
+                  },
+                  "type": {
+                    "enum": [
+                      "konektor",
+                      "skill",
+                      "kuratorski"
+                    ],
+                    "type": "string"
+                  },
+                  "version": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  }
+                },
+                "required": [
+                  "id",
+                  "type",
+                  "name",
+                  "install",
+                  "score"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "provenance": {
+              "description": "Where the catalog data in this response came from, and how old it is.",
+              "properties": {
+                "catalog_generated_at": {
+                  "type": "string"
+                },
+                "fetched_at": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "default": null
+                },
+                "note": {
+                  "type": "string"
+                },
+                "origin": {
+                  "enum": [
+                    "network",
+                    "disk-cache",
+                    "bundled-snapshot"
+                  ],
+                  "type": "string"
+                },
+                "stale": {
+                  "default": false,
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "origin",
+                "catalog_generated_at",
+                "note"
+              ],
+              "type": "object"
+            },
+            "since": {
+              "type": "string"
+            },
+            "updated": {
+              "items": {
+                "properties": {
+                  "card_url": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "category": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "description": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "id": {
+                    "type": "string"
+                  },
+                  "install": {
+                    "additionalProperties": true,
+                    "description": "How to install a catalog entry LOCALLY. The catalog never proxies anything.",
+                    "properties": {
+                      "command": {
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "description": "Copy-paste local install command"
+                      },
+                      "kind": {
+                        "description": "uvx | npx | download | github",
+                        "type": "string"
+                      },
+                      "url": {
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ],
+                        "default": null,
+                        "description": "Download or repository URL"
+                      }
+                    },
+                    "required": [
+                      "kind"
+                    ],
+                    "type": "object"
+                  },
+                  "jurisdiction": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "license": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "score": {
+                    "type": "number"
+                  },
+                  "type": {
+                    "enum": [
+                      "konektor",
+                      "skill",
+                      "kuratorski"
+                    ],
+                    "type": "string"
+                  },
+                  "version": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  }
+                },
+                "required": [
+                  "id",
+                  "type",
+                  "name",
+                  "install",
+                  "score"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "since",
+            "provenance"
+          ],
+          "type": "object"
+        }
+      },
+      "sha256": "0a701cbc9186217deb6e9acfffc257087eb937be560775984a8cc67378fa28f3"
+    }
+  },
+  "toolset_sha256": "2fd083a1e460b294e55c79737ad42694e460f9df2e15f471f617a61593f74449"
+}
