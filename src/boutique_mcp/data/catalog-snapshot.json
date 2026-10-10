@@ -1,13 +1,13 @@
 {
  "$schema": "https://matematicsolutions.com/catalog.schema.json",
  "schema_version": "1.0",
- "generated_at": "2026-07-13",
+ "generated_at": "2026-10-10",
  "source": "https://matematicsolutions.com/boutique",
  "counts": {
-  "konektor": 43,
-  "skill": 52,
-  "kuratorski": 8,
-  "total": 103
+  "konektor": 45,
+  "skill": 59,
+  "kuratorski": 9,
+  "total": 113
  },
  "entries": [
   {
@@ -155,6 +155,55 @@
     "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-be-eli-mcp"
    },
    "added_at": "2026-07-06",
+   "updated_at": "2026-07-13"
+  },
+  {
+   "id": "boutique-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "Boutique / katalog",
+    "en": "Boutique / catalog",
+    "pt": "Boutique / catálogo"
+   },
+   "problem": {
+    "pl": "Boutique to już ponad 100 klocków: konektory, skille, karty kuratorskie. Agent nie wie, który rozwiązuje jego zadanie, a hostowana wyszukiwarka z definicji widzi każde zapytanie.",
+    "en": "Boutique is past 100 building blocks: connectors, skills, curated cards. An agent cannot tell which one solves its task, and a hosted search API sees every query by definition.",
+    "pt": "O Boutique já passa de 100 blocos: conectores, skills, cartões curados. O agente não sabe qual deles resolve a tarefa, e um buscador hospedado vê cada consulta por definição."
+   },
+   "description": {
+    "pl": "Cały katalog Boutique jako lokalny konektor MCP: agent przeszukuje go u siebie i dostaje kartę klocka z komendą instalacji (uvx/npx). Kopia katalogu leży na dysku, więc działa offline, a treść zapytania nie wychodzi z komputera. Gdy pokrycia brakuje, powstaje szkic zgłoszenia - wysyła go człowiek.",
+    "en": "The whole Boutique catalog as a local MCP connector: the agent searches it on your machine and gets the block's card with an install command (uvx/npx). A copy of the catalog lives on disk, so it works offline and query content never leaves the computer. When coverage is missing, the tool drafts a request - a human submits it.",
+    "pt": "O catálogo completo do Boutique como conector MCP local: o agente pesquisa na própria máquina e recebe a ficha do bloco com o comando de instalação (uvx/npx). Uma cópia do catálogo fica no disco, funciona offline e o conteúdo da consulta nunca sai do computador. Quando falta cobertura, a ferramenta prepara um rascunho de pedido - quem envia é um humano."
+   },
+   "category": {
+    "pl": "katalog",
+    "en": "catalog",
+    "pt": "catálogo"
+   },
+   "jurisdiction": {
+    "pl": "Cała flota",
+    "en": "Whole fleet",
+    "pt": "Frota completa"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx boutique-mcp"
+   },
+   "version": "0.1.0",
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/boutique-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-boutique-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-boutique-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-boutique-mcp"
+   },
+   "added_at": "2026-07-13",
    "updated_at": "2026-07-13"
   },
   {
@@ -1825,6 +1874,55 @@
    "updated_at": "2026-07-13"
   },
   {
+   "id": "prawo-pl-mcp",
+   "type": "konektor",
+   "name": {
+    "pl": "prawo-pl-mcp",
+    "en": "prawo-pl-mcp",
+    "pt": "prawo-pl-mcp"
+   },
+   "problem": {
+    "pl": "Polskie źródła prawa siedzą w osobnych konektorach: orzecznictwo powszechne, administracyjne, ustawy, KRS, interpretacje podatkowe, zamówienia publiczne, decyzje UODO. Siedem konektorów to siedem instalacji i siedem wpisów w konfiguracji, zanim padnie pierwsze pytanie.",
+    "en": "Polish legal sources sit in separate connectors: civil and administrative case law, legislation, the company register, tax rulings, public procurement, data-protection decisions. Seven connectors mean seven installs and seven config entries before the first question.",
+    "pt": "As fontes do direito polonês ficam em conectores separados: jurisprudência comum e administrativa, legislação, registro de empresas, consultas tributárias, licitações, decisões da autoridade de proteção de dados. Sete conectores são sete instalações e sete entradas na configuração antes da primeira pergunta."
+   },
+   "description": {
+    "pl": "Jeden serwer MCP nad całą polską półką, plus trzy źródła unijne: cztery narzędzia zamiast czterdziestu dwóch. Konektory zostają osobnymi pakietami - agregator uruchamia je dopiero wtedy, gdy pytanie ich dotyczy, i sam tłumaczy różnice w nazwach parametrów, bo każda baza liczy strony po swojemu. Długie wyroki i ustawy dzieli na strony po 5 tys. znaków, żeby jeden dokument nie zajął całego okna kontekstu.",
+    "en": "One MCP server over the whole Polish shelf, plus three EU sources: four tools instead of forty-two. The connectors stay separate packages - the aggregator starts one only when a question needs it and translates between their parameter names, because every database counts pages its own way. Long judgments and statutes come back in 5,000-character pages, so one document does not fill the context window.",
+    "pt": "Um servidor MCP sobre toda a prateleira polonesa, mais três fontes da UE: quatro ferramentas no lugar de quarenta e duas. Os conectores continuam pacotes separados - o agregador inicia cada um só quando a pergunta exige e traduz as diferenças de nomes de parâmetros, porque cada base conta páginas do seu jeito. Acórdãos e leis longos voltam em páginas de 5 mil caracteres, para que um documento não ocupe toda a janela de contexto."
+   },
+   "category": {
+    "pl": "agregator",
+    "en": "aggregator",
+    "pt": "agregador"
+   },
+   "jurisdiction": {
+    "pl": "Polska",
+    "en": "Poland",
+    "pt": "Polônia"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "uvx",
+    "command": "uvx prawo-pl-mcp"
+   },
+   "version": null,
+   "license": "Apache-2.0",
+   "author": "MateMatic Solutions",
+   "source_url": "https://github.com/matematicsolutions/prawo-pl-mcp",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/konektory#conn-prawo-pl-mcp",
+    "en": "https://matematicsolutions.com/en/boutique/connectors#conn-prawo-pl-mcp",
+    "pt": "https://matematicsolutions.com/pt/boutique/connectors#conn-prawo-pl-mcp"
+   },
+   "added_at": "2026-07-31",
+   "updated_at": "2026-07-31"
+  },
+  {
    "id": "ro-eli-mcp",
    "type": "konektor",
    "name": {
@@ -2160,12 +2258,12 @@
    "author": "GenAI-Gurus",
    "source_url": "https://github.com/GenAI-Gurus/awesome-eu-ai-act",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille",
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "pl": "https://matematicsolutions.com/boutique/skille#kur-genai-gurus-awesome-eu-ai-act",
+    "en": "https://matematicsolutions.com/en/boutique/skills#kur-genai-gurus-awesome-eu-ai-act",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#kur-genai-gurus-awesome-eu-ai-act"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
@@ -2209,12 +2307,12 @@
    "author": "Sushegaad",
    "source_url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille",
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "pl": "https://matematicsolutions.com/boutique/skille#kur-sushegaad-claude-skills-governance-risk-and-compliance",
+    "en": "https://matematicsolutions.com/en/boutique/skills#kur-sushegaad-claude-skills-governance-risk-and-compliance",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#kur-sushegaad-claude-skills-governance-risk-and-compliance"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "anthropics/claude-for-legal",
@@ -2258,12 +2356,12 @@
    "author": "anthropics",
    "source_url": "https://github.com/anthropics/claude-for-legal",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille",
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "pl": "https://matematicsolutions.com/boutique/skille#kur-anthropics-claude-for-legal",
+    "en": "https://matematicsolutions.com/en/boutique/skills#kur-anthropics-claude-for-legal",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#kur-anthropics-claude-for-legal"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "apiotrowski-afk/commercial-legal-pl",
@@ -2307,12 +2405,61 @@
    "author": "apiotrowski-afk",
    "source_url": "https://github.com/apiotrowski-afk/commercial-legal-pl",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille",
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "pl": "https://matematicsolutions.com/boutique/skille#kur-apiotrowski-afk-commercial-legal-pl",
+    "en": "https://matematicsolutions.com/en/boutique/skills#kur-apiotrowski-afk-commercial-legal-pl",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#kur-apiotrowski-afk-commercial-legal-pl"
    },
    "added_at": "2026-07-13",
-   "updated_at": "2026-07-13"
+   "updated_at": "2026-09-19"
+  },
+  {
+   "id": "emidio-trancoso/advocacia-aberta",
+   "type": "kuratorski",
+   "name": {
+    "pl": "Metoda otwarta (prawo BR)",
+    "en": "Open method (Brazilian law)",
+    "pt": "Método aberto (direito brasileiro)"
+   },
+   "problem": {
+    "pl": "Sprawa dotyka prawa brazylijskiego - potrzebujesz súmuli STJ, czyli utrwalonej tezy sądu, i nie masz jak sprawdzić, czy model jej nie dopisał.",
+    "en": "Your matter touches Brazilian law - you need an STJ súmula, the court's settled position on a point, with no way to tell whether the model made it up.",
+    "pt": "O caso toca o direito brasileiro - você precisa de uma súmula do STJ ou de um tema de repercussão geral do STF e não tem como saber se o modelo o inventou."
+   },
+   "description": {
+    "pl": "Metoda pracy adwokata Emidio Trancoso (OAB/PR, założyciel Komisji AI przy OAB Paraná): 10 protokołów i lokalny korpus oficjalnych źródeł - 277 aktów legislacji i ponad 20 tysięcy wyselekcjonowanych rekordów STF i STJ. Osobne narzędzie podaje, kiedy dane pobrano i czego w nich brakuje, więc granicę bazy widać, zanim się na niej oprzesz.",
+    "en": "A working method by Emidio Trancoso, attorney (OAB/PR, founder of the OAB Paraná AI Commission): 10 protocols over a local corpus of official sources - 277 pieces of legislation and more than 20,000 curated STF and STJ records. A dedicated tool reports when each data family was captured and what it leaves out, so the edge of the corpus shows before you lean on it.",
+    "pt": "Método de trabalho do advogado Emidio Trancoso (OAB/PR, fundador da Comissão de IA da OAB Paraná): 10 protocolos sobre uma base local de fontes oficiais - 277 diplomas de legislação, súmulas, teses, temas e mais de 20 mil espelhos e informativos do STJ e do STF. Uma ferramenta própria informa quando cada família de dados foi capturada e o que fica de fora, então o limite da base aparece antes de você se apoiar nela."
+   },
+   "category": {
+    "pl": "sprawa",
+    "en": "matters",
+    "pt": "casos"
+   },
+   "jurisdiction": {
+    "pl": "Prawo brazylijskie",
+    "en": "Brazilian law",
+    "pt": "Direito brasileiro"
+   },
+   "languages": [
+    "pl",
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "github",
+    "url": "https://github.com/emidio-trancoso/advocacia-aberta"
+   },
+   "version": null,
+   "license": "MIT",
+   "author": "emidio-trancoso",
+   "source_url": "https://github.com/emidio-trancoso/advocacia-aberta",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille#kur-emidio-trancoso-advocacia-aberta",
+    "en": "https://matematicsolutions.com/en/boutique/skills#kur-emidio-trancoso-advocacia-aberta",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#kur-emidio-trancoso-advocacia-aberta"
+   },
+   "added_at": "2026-08-24",
+   "updated_at": "2026-09-19"
   },
   {
    "id": "evolsb/claude-legal-skill",
@@ -2356,12 +2503,12 @@
    "author": "evolsb",
    "source_url": "https://github.com/evolsb/claude-legal-skill",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille",
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "pl": "https://matematicsolutions.com/boutique/skille#kur-evolsb-claude-legal-skill",
+    "en": "https://matematicsolutions.com/en/boutique/skills#kur-evolsb-claude-legal-skill",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#kur-evolsb-claude-legal-skill"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "microsoft/presidio",
@@ -2405,12 +2552,12 @@
    "author": "microsoft",
    "source_url": "https://github.com/microsoft/presidio",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille",
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "pl": "https://matematicsolutions.com/boutique/skille#kur-microsoft-presidio",
+    "en": "https://matematicsolutions.com/en/boutique/skills#kur-microsoft-presidio",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#kur-microsoft-presidio"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "morellid/ai-act-skill",
@@ -2454,12 +2601,12 @@
    "author": "morellid",
    "source_url": "https://github.com/morellid/ai-act-skill",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille",
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "pl": "https://matematicsolutions.com/boutique/skille#kur-morellid-ai-act-skill",
+    "en": "https://matematicsolutions.com/en/boutique/skills#kur-morellid-ai-act-skill",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#kur-morellid-ai-act-skill"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "mukul975/Privacy-Data-Protection-Skills",
@@ -2503,12 +2650,12 @@
    "author": "mukul975",
    "source_url": "https://github.com/mukul975/Privacy-Data-Protection-Skills",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille",
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "pl": "https://matematicsolutions.com/boutique/skille#kur-mukul975-privacy-data-protection-skills",
+    "en": "https://matematicsolutions.com/en/boutique/skills#kur-mukul975-privacy-data-protection-skills",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#kur-mukul975-privacy-data-protection-skills"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "adversarial-legal-review-en",
@@ -2543,11 +2690,11 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/adversarial-legal-review-en.zip",
    "card_url": {
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "en": "https://matematicsolutions.com/en/boutique/skills#skill-adversarial-legal-review-en",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-adversarial-legal-review-en"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "adversarial-legal-review-pl",
@@ -2577,10 +2724,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/adversarial-legal-review-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-adversarial-legal-review-pl"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "ai-act-triage-pl",
@@ -2612,10 +2759,45 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/ai-act-triage-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-ai-act-triage-pl"
    },
    "added_at": "2026-07-05",
-   "updated_at": "2026-07-05"
+   "updated_at": "2026-09-19"
+  },
+  {
+   "id": "akta-przeszukiwalne-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Akta przeszukiwalne"
+   },
+   "problem": {
+    "pl": "Akta przyszły jako skany: nie da się w nich wyszukać słowa, a na setkach stron łatwo przeoczyć, czego brakuje."
+   },
+   "description": {
+    "pl": "Odczytuje skany na Twoim komputerze, bez chmury, i oddaje tekst z numerami stron, wyszukiwarkę oraz raport: strony nieczytelne i pliki o identycznej treści pod różnymi nazwami - bywa to ślad brakującego pisma."
+   },
+   "category": {
+    "pl": "OCR lokalny"
+   },
+   "jurisdiction": {
+    "pl": "Akta"
+   },
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/akta-przeszukiwalne-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/akta-przeszukiwalne-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-akta-przeszukiwalne-pl"
+   },
+   "added_at": "2026-09-21",
+   "updated_at": "2026-09-21"
   },
   {
    "id": "atak-przeciwnika-pl",
@@ -2647,10 +2829,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/atak-przeciwnika-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-atak-przeciwnika-pl"
    },
    "added_at": "2026-07-05",
-   "updated_at": "2026-07-05"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "authority-triage-en",
@@ -2688,11 +2870,46 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/authority-triage-en.zip",
    "card_url": {
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "en": "https://matematicsolutions.com/en/boutique/skills#skill-authority-triage-en",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-authority-triage-en"
    },
    "added_at": "2026-07-05",
-   "updated_at": "2026-07-05"
+   "updated_at": "2026-09-19"
+  },
+  {
+   "id": "chronologia-stanowiska-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Chronologia i stanowiska stron"
+   },
+   "problem": {
+    "pl": "Chronologię sprawy i zestawienie stanowisk stron układa się ręcznie z setek stron akt, a jedna przekręcona data albo cytat, którego nie ma na wskazanej stronie, podważa pismo."
+   },
+   "description": {
+    "pl": "Z tekstu akt buduje oś czasu albo tabelę: element roszczenia, twierdzenie, stanowisko przeciwnika, dowody i luki. Skrypt sprawdza, czy każdy cytat naprawdę stoi na wskazanej stronie akt - wpis bez pokrycia nie przechodzi jako pewny."
+   },
+   "category": {
+    "pl": "Akta"
+   },
+   "jurisdiction": {
+    "pl": "Spory"
+   },
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/chronologia-stanowiska-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/chronologia-stanowiska-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-chronologia-stanowiska-pl"
+   },
+   "added_at": "2026-10-07",
+   "updated_at": "2026-10-07"
   },
   {
    "id": "citation-extraction-en",
@@ -2727,11 +2944,11 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/citation-extraction-en.zip",
    "card_url": {
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "en": "https://matematicsolutions.com/en/boutique/skills#skill-citation-extraction-en",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-citation-extraction-en"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "citation-grounding-pl",
@@ -2761,10 +2978,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/citation-grounding-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-citation-grounding-pl"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "clause-checklist-en",
@@ -2799,11 +3016,11 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/clause-checklist-en.zip",
    "card_url": {
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "en": "https://matematicsolutions.com/en/boutique/skills#skill-clause-checklist-en",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-clause-checklist-en"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "contract-review-pl",
@@ -2833,10 +3050,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/contract-review-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-contract-review-pl"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "deliverable-fidelity-pl",
@@ -2866,10 +3083,45 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/deliverable-fidelity-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-deliverable-fidelity-pl"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
+  },
+  {
+   "id": "doc-intel-llm-tier-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Ekstrakcja z zakotwiczeniem cytatu"
+   },
+   "problem": {
+    "pl": "Umowa czy wyrok kryje konkrety - kara umowna, termin, sąd właściwy - a przepisywanie ich ręcznie po jednym zjada godziny, których nikt nie ma."
+   },
+   "description": {
+    "pl": "Warstwa LLM wyciąga pola, których zwykłe wyszukiwanie nie złapie, i zakotwicza każde do zdania źródłowego wraz z uzasadnieniem, w formacie, który zasila weryfikację cytatu. Domyślnie działa lokalnie (Ollama); model chmurowy tylko za jawną flagą i z ostrzeżeniem o transferze poza EOG."
+   },
+   "category": {
+    "pl": "ekstrakcja"
+   },
+   "jurisdiction": {
+    "pl": "Dokumenty"
+   },
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/doc-intel-llm-tier-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/doc-intel-llm-tier-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-doc-intel-llm-tier-pl"
+   },
+   "added_at": "2026-07-21",
+   "updated_at": "2026-09-19"
   },
   {
    "id": "ekstraktor-cytatow-pl",
@@ -2899,10 +3151,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/ekstraktor-cytatow-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-ekstraktor-cytatow-pl"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "eu-ai-act-triage-en",
@@ -2940,11 +3192,11 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/eu-ai-act-triage-en.zip",
    "card_url": {
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "en": "https://matematicsolutions.com/en/boutique/skills#skill-eu-ai-act-triage-en",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-eu-ai-act-triage-en"
    },
    "added_at": "2026-07-05",
-   "updated_at": "2026-07-05"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "eu-sparql-search",
@@ -2984,12 +3236,12 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/eu-sparql-search.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille",
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-eu-sparql-search",
+    "en": "https://matematicsolutions.com/en/boutique/skills#skill-eu-sparql-search",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-eu-sparql-search"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "gdpr-breach-72h-en",
@@ -3024,11 +3276,11 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/gdpr-breach-72h-en.zip",
    "card_url": {
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "en": "https://matematicsolutions.com/en/boutique/skills#skill-gdpr-breach-72h-en",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-gdpr-breach-72h-en"
    },
    "added_at": "2026-06-30",
-   "updated_at": "2026-06-30"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "gdpr-dpia-en",
@@ -3063,11 +3315,11 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/gdpr-dpia-en.zip",
    "card_url": {
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "en": "https://matematicsolutions.com/en/boutique/skills#skill-gdpr-dpia-en",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-gdpr-dpia-en"
    },
    "added_at": "2026-06-30",
-   "updated_at": "2026-06-30"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "gdpr-dsar-en",
@@ -3102,11 +3354,11 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/gdpr-dsar-en.zip",
    "card_url": {
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "en": "https://matematicsolutions.com/en/boutique/skills#skill-gdpr-dsar-en",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-gdpr-dsar-en"
    },
    "added_at": "2026-06-30",
-   "updated_at": "2026-06-30"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "gdpr-ropa-dpa-en",
@@ -3141,11 +3393,11 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/gdpr-ropa-dpa-en.zip",
    "card_url": {
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "en": "https://matematicsolutions.com/en/boutique/skills#skill-gdpr-ropa-dpa-en",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-gdpr-ropa-dpa-en"
    },
    "added_at": "2026-06-30",
-   "updated_at": "2026-06-30"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "hierarchia-zrodel-pl",
@@ -3177,10 +3429,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/hierarchia-zrodel-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-hierarchia-zrodel-pl"
    },
    "added_at": "2026-07-05",
-   "updated_at": "2026-07-05"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "humanizer-en",
@@ -3215,11 +3467,11 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/humanizer-en.zip",
    "card_url": {
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "en": "https://matematicsolutions.com/en/boutique/skills#skill-humanizer-en",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-humanizer-en"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "humanizer-pl",
@@ -3249,10 +3501,43 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/humanizer-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-humanizer-pl"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
+  },
+  {
+   "id": "humanizer-pt",
+   "type": "skill",
+   "name": {
+    "pt": "Humanizer em português"
+   },
+   "problem": {
+    "pt": "Texto gerado por máquina deixa marcas também em português: gerundismo, \"vale ressaltar\", decalques do inglês, travessões em excesso, entusiasmo vazio."
+   },
+   "description": {
+    "pt": "Encontra essas marcas com listas de palavras e regras de tipografia do português (pt-BR por padrão, pt-PT a pedido) e reescreve só a forma, sem mexer nos fatos. Se você tem um guia de estilo próprio, ele prevalece sobre o padrão do skill."
+   },
+   "category": {
+    "pt": "Edição"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/humanizer-pt.zip"
+   },
+   "version": null,
+   "license": "MIT",
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/humanizer-pt.zip",
+   "card_url": {
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-humanizer-pt"
+   },
+   "added_at": "2026-10-05",
+   "updated_at": "2026-10-05"
   },
   {
    "id": "intake-sufficiency-pl",
@@ -3282,10 +3567,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/intake-sufficiency-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-intake-sufficiency-pl"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "judicial-first-impression-en",
@@ -3323,11 +3608,46 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/judicial-first-impression-en.zip",
    "card_url": {
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "en": "https://matematicsolutions.com/en/boutique/skills#skill-judicial-first-impression-en",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-judicial-first-impression-en"
    },
    "added_at": "2026-07-05",
-   "updated_at": "2026-07-05"
+   "updated_at": "2026-09-19"
+  },
+  {
+   "id": "kalkulatory-procesowe-pl",
+   "type": "skill",
+   "name": {
+    "pl": "Kalkulatory procesowe"
+   },
+   "problem": {
+    "pl": "Stawki zmieniają się po cichu: od września 2025 maksimum opłaty stosunkowej to 100 000 zł, nie 200 000 zł - kalkulator z przestarzałą tabelą myli się z pełnym przekonaniem."
+   },
+   "description": {
+    "pl": "Cztery rachunki procesu cywilnego - opłata sądowa, przedawnienie, odsetki w trzech reżimach, WPS - każdy zaczyna od pobrania żywych parametrów (ISAP, NBP), a kończy pełnym rachunkiem z podstawą prawną każdego kroku, do zatwierdzenia przez człowieka."
+   },
+   "category": {
+    "pl": "kalkulatory"
+   },
+   "jurisdiction": {
+    "pl": "Dokumenty"
+   },
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/kalkulatory-procesowe-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/kalkulatory-procesowe-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-kalkulatory-procesowe-pl"
+   },
+   "added_at": "2026-07-14",
+   "updated_at": "2026-09-19"
   },
   {
    "id": "klauzule-kontraktowe-pl",
@@ -3357,10 +3677,45 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/klauzule-kontraktowe-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-klauzule-kontraktowe-pl"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
+  },
+  {
+   "id": "kyc-kancelaria-pl",
+   "type": "skill",
+   "name": {
+    "pl": "KYC kancelarii"
+   },
+   "problem": {
+    "pl": "Przed przyjęciem zlecenia od spółki trzeba sprawdzić KRS, białą listę VAT, beneficjentów rzeczywistych i listy sankcyjne - w kilku rejestrach, ręcznie, przy każdym kliencie."
+   },
+   "description": {
+    "pl": "Pobiera odpis KRS i status VAT, porównuje oświadczenie o beneficjentach z wydrukiem CRBR i przesiewa osoby z teczki przez listy ONZ, UE i MSWiA na Twoim komputerze - nazwiska nie wychodzą do sieci. Niczego nie zatwierdza: pokazuje, czego brakuje i co eskalować. Wydruk CRBR pobierasz sam."
+   },
+   "category": {
+    "pl": "KYC/AML"
+   },
+   "jurisdiction": {
+    "pl": "Governance"
+   },
+   "languages": [
+    "pl"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/kyc-kancelaria-pl.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/kyc-kancelaria-pl.zip",
+   "card_url": {
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-kyc-kancelaria-pl"
+   },
+   "added_at": "2026-10-07",
+   "updated_at": "2026-10-07"
   },
   {
    "id": "legal-ai-audit-bundle",
@@ -3372,7 +3727,7 @@
     "pl": "Użyłeś AI do opinii, ale nie potrafisz odtworzyć, jak powstała - jaki model, jakie źródła, kto zatwierdził."
    },
    "description": {
-    "pl": "Składa gotowe pismo, ślad rozumowania, log kosztu i metadane w jeden folder z hashami SHA256 - dowód należytej staranności pod AI Act art. 12."
+    "pl": "Składa gotowe pismo, ślad rozumowania, log kosztu i metadane w jeden folder z hashami SHA256 - dokumentacja użycia AI w sprawie, uporządkowana pod rejestrowanie zdarzeń (AI Act art. 12)."
    },
    "category": {
     "pl": "Zgodność / AI Act"
@@ -3390,10 +3745,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/legal-ai-audit-bundle.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-legal-ai-audit-bundle"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "legal-data-hunter-pl",
@@ -3423,10 +3778,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/legal-data-hunter-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-legal-data-hunter-pl"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "legal-request-router-pl",
@@ -3456,10 +3811,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/legal-request-router-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-legal-request-router-pl"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "legal-syllogism-en",
@@ -3494,11 +3849,11 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/legal-syllogism-en.zip",
    "card_url": {
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "en": "https://matematicsolutions.com/en/boutique/skills#skill-legal-syllogism-en",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-legal-syllogism-en"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "let-it-be",
@@ -3528,10 +3883,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/let-it-be.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-let-it-be"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "marko-pl-content",
@@ -3561,10 +3916,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/marko-pl-content.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-marko-pl-content"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "matematic-readiness-audit",
@@ -3594,10 +3949,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/matematic-readiness-audit.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-matematic-readiness-audit"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "nis2-compliance-triage-en",
@@ -3635,11 +3990,11 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/nis2-compliance-triage-en.zip",
    "card_url": {
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "en": "https://matematicsolutions.com/en/boutique/skills#skill-nis2-compliance-triage-en",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-nis2-compliance-triage-en"
    },
    "added_at": "2026-07-05",
-   "updated_at": "2026-07-05"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "nis2-ksc-pl",
@@ -3671,10 +4026,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/nis2-ksc-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-nis2-ksc-pl"
    },
    "added_at": "2026-07-05",
-   "updated_at": "2026-07-05"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "ocena-outputu-pl",
@@ -3704,10 +4059,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/ocena-outputu-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-ocena-outputu-pl"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "opposing-counsel-attack-en",
@@ -3745,11 +4100,11 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/opposing-counsel-attack-en.zip",
    "card_url": {
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "en": "https://matematicsolutions.com/en/boutique/skills#skill-opposing-counsel-attack-en",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-opposing-counsel-attack-en"
    },
    "added_at": "2026-07-05",
-   "updated_at": "2026-07-05"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "output-scoring-en",
@@ -3784,11 +4139,11 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/output-scoring-en.zip",
    "card_url": {
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "en": "https://matematicsolutions.com/en/boutique/skills#skill-output-scoring-en",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-output-scoring-en"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "pierwsze-wrazenie-sedziego-pl",
@@ -3820,10 +4175,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/pierwsze-wrazenie-sedziego-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-pierwsze-wrazenie-sedziego-pl"
    },
    "added_at": "2026-07-05",
-   "updated_at": "2026-07-05"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "privilege-preflight-en",
@@ -3861,11 +4216,11 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/privilege-preflight-en.zip",
    "card_url": {
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "en": "https://matematicsolutions.com/en/boutique/skills#skill-privilege-preflight-en",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-privilege-preflight-en"
    },
    "added_at": "2026-07-05",
-   "updated_at": "2026-07-05"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "redline-docx-pl",
@@ -3895,10 +4250,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/redline-docx-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-redline-docx-pl"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "reviewer-en",
@@ -3933,11 +4288,44 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/reviewer-en.zip",
    "card_url": {
-    "en": "https://matematicsolutions.com/en/boutique/skills",
-    "pt": "https://matematicsolutions.com/pt/boutique/skills"
+    "en": "https://matematicsolutions.com/en/boutique/skills#skill-reviewer-en",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-reviewer-en"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
+  },
+  {
+   "id": "reviewer-pt",
+   "type": "skill",
+   "name": {
+    "pt": "Reviewer em português"
+   },
+   "problem": {
+    "pt": "Você revisou o texto três vezes e ele ainda soa como folheto: gerundismo, \"o mesmo\" como pronome, afirmação sem fonte, chamada para ação vaga."
+   },
+   "description": {
+    "pt": "Um editor sênior rabugento dá um veredito e até oito acusações em pt-BR, cada uma ancorada em arquivo:linha. Aponta, não reescreve: para corrigir, use o Humanizer em português."
+   },
+   "category": {
+    "pt": "Qualidade de conteúdo"
+   },
+   "jurisdiction": {},
+   "languages": [
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/reviewer-pt.zip"
+   },
+   "version": null,
+   "license": "MIT",
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/reviewer-pt.zip",
+   "card_url": {
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-reviewer-pt"
+   },
+   "added_at": "2026-10-06",
+   "updated_at": "2026-10-06"
   },
   {
    "id": "risk-and-issues-manager-pl",
@@ -3967,10 +4355,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/risk-and-issues-manager-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-risk-and-issues-manager-pl"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "rodo-dpia-pl",
@@ -4000,10 +4388,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/rodo-dpia-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-rodo-dpia-pl"
    },
    "added_at": "2026-06-30",
-   "updated_at": "2026-06-30"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "rodo-dsar-pl",
@@ -4033,10 +4421,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/rodo-dsar-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-rodo-dsar-pl"
    },
    "added_at": "2026-06-30",
-   "updated_at": "2026-06-30"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "rodo-naruszenie-72h-pl",
@@ -4066,10 +4454,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/rodo-naruszenie-72h-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-rodo-naruszenie-72h-pl"
    },
    "added_at": "2026-06-30",
-   "updated_at": "2026-06-30"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "rodo-ropa-dpa-pl",
@@ -4099,10 +4487,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/rodo-ropa-dpa-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-rodo-ropa-dpa-pl"
    },
    "added_at": "2026-06-30",
-   "updated_at": "2026-06-30"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "scope-change-controller-pl",
@@ -4132,10 +4520,52 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/scope-change-controller-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-scope-change-controller-pl"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
+  },
+  {
+   "id": "searchable-case-files-en",
+   "type": "skill",
+   "name": {
+    "en": "Searchable case files",
+    "pt": "Autos pesquisáveis"
+   },
+   "problem": {
+    "en": "The file arrived as scans: you cannot search it for a word, and across hundreds of pages it is easy to miss what is not there.",
+    "pt": "Os autos chegaram digitalizados: não dá para pesquisar uma palavra, e em centenas de páginas é fácil não perceber o que falta."
+   },
+   "description": {
+    "en": "Reads the scans on your own computer, with no cloud, and returns text with page numbers, a search tool and a report: unreadable pages and files with identical text under different names - sometimes the sign of a missing document.",
+    "pt": "Lê as digitalizações no seu próprio computador, sem nuvem e com um modelo de OCR treinado para o português, e devolve texto com números de página, uma ferramenta de busca e um relatório: páginas ilegíveis e arquivos com texto idêntico sob nomes diferentes - às vezes o sinal de um documento ausente."
+   },
+   "category": {
+    "en": "local OCR",
+    "pt": "OCR local"
+   },
+   "jurisdiction": {
+    "en": "Case files",
+    "pt": "Autos"
+   },
+   "languages": [
+    "en",
+    "pt"
+   ],
+   "install": {
+    "kind": "download",
+    "url": "https://matematicsolutions.com/downloads/skille/searchable-case-files-en.zip"
+   },
+   "version": null,
+   "license": null,
+   "author": "MateMatic Solutions",
+   "source_url": "https://matematicsolutions.com/downloads/skille/searchable-case-files-en.zip",
+   "card_url": {
+    "en": "https://matematicsolutions.com/en/boutique/skills#skill-searchable-case-files-en",
+    "pt": "https://matematicsolutions.com/pt/boutique/skills#skill-searchable-case-files-en"
+   },
+   "added_at": "2026-09-21",
+   "updated_at": "2026-09-21"
   },
   {
    "id": "status-report-drafter-pl",
@@ -4165,10 +4595,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/status-report-drafter-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-status-report-drafter-pl"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "struktura-wyroku-pl",
@@ -4198,10 +4628,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/struktura-wyroku-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-struktura-wyroku-pl"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "subsumpcja-pl",
@@ -4231,43 +4661,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/subsumpcja-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-subsumpcja-pl"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
-  },
-  {
-   "id": "szukaj-orzeczen-v2",
-   "type": "skill",
-   "name": {
-    "pl": "Szukaj orzeczeń"
-   },
-   "problem": {
-    "pl": "Szukanie orzecznictwa po portalach to przeklejanie i gubienie sygnatur."
-   },
-   "description": {
-    "pl": "Przeszukuje bazę SAOS, pobiera pełne treści orzeczeń i składa raport tematyczny w DOCX. Sygnatury i hasła pod ręką."
-   },
-   "category": {
-    "pl": "Research"
-   },
-   "jurisdiction": {},
-   "languages": [
-    "pl"
-   ],
-   "install": {
-    "kind": "download",
-    "url": "https://matematicsolutions.com/downloads/skille/szukaj-orzeczen-v2.zip"
-   },
-   "version": null,
-   "license": null,
-   "author": "MateMatic Solutions",
-   "source_url": "https://matematicsolutions.com/downloads/skille/szukaj-orzeczen-v2.zip",
-   "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
-   },
-   "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "tajemnica-preflight-pl",
@@ -4299,10 +4696,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/tajemnica-preflight-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-tajemnica-preflight-pl"
    },
    "added_at": "2026-07-05",
-   "updated_at": "2026-07-05"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "terminy-procesowe-pl",
@@ -4334,10 +4731,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/terminy-procesowe-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-terminy-procesowe-pl"
    },
    "added_at": "2026-07-05",
-   "updated_at": "2026-07-05"
+   "updated_at": "2026-09-19"
   },
   {
    "id": "webwright-legal-pl",
@@ -4367,10 +4764,10 @@
    "author": "MateMatic Solutions",
    "source_url": "https://matematicsolutions.com/downloads/skille/webwright-legal-pl.zip",
    "card_url": {
-    "pl": "https://matematicsolutions.com/boutique/skille"
+    "pl": "https://matematicsolutions.com/boutique/skille#skill-webwright-legal-pl"
    },
    "added_at": "2026-06-25",
-   "updated_at": "2026-06-25"
+   "updated_at": "2026-09-19"
   }
  ]
 }
